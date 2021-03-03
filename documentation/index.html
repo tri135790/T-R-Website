@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <title>Tuam - React Next Office Space & Rental Template</title>
+
+        <!-- Styles -->
+        <link href="css/collection.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500%7CLato:300,400" rel="stylesheet" type="text/css">
+
+        <!-- Scripts -->
+        <script src="js/other.js"></script>
+        <script src="js/custom.js"></script>
+    </head>
+
+    <body data-spy="scroll" data-target=".sidebar" data-offset="200">
+
+        <!-- Sidebar -->
+        <aside class="sidebar sidebar-boxed sidebar-dark">  
+            <ul class="nav sidenav dropable">
+                <li><a href="#introduction" title="Introduction">Introduction</a></li>
+                <li><a href="#getting_started" title="Setup Development Envrionment">Setup Development Environment</a></li>
+                 <li><a href="#documenter_cover">Pages and Components Info</a></li>
+                
+                <li><a href="#dependencies" title="Dependencies">Dependencies</a></li>
+                <li><a href="#change_layout" title="Change Default Home Page">Change Default Home Page</a></li>
+                <li><a href="#fonts_used" title="Fonts">Fonts</a></li>
+                <li><a href="#credits" title="Credits">Credits</a></li>
+                <li><a href="#supports" title="Support">Support</a></li>
+            </ul>
+        </aside>
+        <!-- END Sidebar -->
+
+        <header class="site-header navbar-transparent"> 
+            <!-- Banner -->
+            <div class="banner auto-size" style="background-color: #455aa2">
+                <div class="container-fluid">
+                    <h1><strong>Tuam - React - Next</strong>  Documentation</h1>
+                </div>
+            </div>
+            <!-- END Banner --> 
+        </header>
+        
+        <main class="container-fluid"> 
+
+            <!-- Main content -->
+            <article class="main-content" role="main">
+                <section id="introduction">
+                    <div class="page-header">
+                        <h3>Introduction</h3>
+                    </div>
+                    <p>Tuam is a React, Next and Bootstrap 5 based Professional website template. This has been built with React, ES6+ and as framework Next.js. Also this is a creative responsive template purposely designed and built for office rental (sharing & private), coworking office space, meeting location space and other multi-purpose focused business oriented real estate online publications through a website.</p>
+                </section>
+
+                <section id="getting_started">
+                    <div class="page-header">
+                        <h3>Setup Development Environment</h3>
+                    </div>
+                    <p>
+                        In order to kickstart the development of your web app with Tuam, the very first thing you need to do is to setup a react development environment.
+                    </p>
+                    <p>Following tools are needed to setup a react dev environment:</p>
+                    <ul>
+                        <li><b>Node JS</b></li>
+                        <p>
+                            NodeJS works as a node package manager behind the scene. It is recommended to download and install the latest version of Node JS from its official site <a href="http://nodejs.org/" target="_blank">http://nodejs.org/</a>
+                        </p>
+                    </ul>
+                    
+                    <div class="page-header">
+                        <h3>Preparation</h3>
+                    </div>
+
+                    <p>
+                        You'll need to install <a href="https://nodejs.org/en/" href="_blank">Node.js >=v8.11+ (Recommended Version)</a> (NPM comes along with it) and serve (a NPM package)
+                    </p>
+
+                    <p>Use command line tool i.e. powershell or terminal and navigate to the project(Luzon) root. This is powershell in windows and terminal on mac/linux.</p>
+
+                    <strong>Let's have a look on the setup process:</strong> <br>
+                    <p>Use terminal and navigate to the project root.</p>
+                    <p>Then run : <code class="language-markup">npm install</code></p>
+                    <p>Then run : <code class="language-markup">npm run dev</code></p>
+                    <p>It'll return something like this in the console:</p>
+                    <p>> project@1.0.0 dev drive:\project</p>
+                    <p>> next</p>
+                    <p>[ wait ]  starting the development server ...</p>
+                    <p>[ info ]  waiting on http://localhost:3000 ...</p>
+                    <p>[ ready ] compiled successfully</p>
+                    <p>[ info ]  ready on http://localhost:3000</p>
+                    <p>Now, in the browser go to <a href="localhost:3000">localhost:3000</a></p>
+
+                    <div class="page-header">
+                        <h3>For Static Build</h3>
+                    </div>
+                    <p>Run : <code class="language-markup">npm run build</code></p>
+                    <p>Then Run : <code class="language-markup">npm run export</code></p>
+                    <p>Then Run : <code class="language-markup">npm install -g serve</code></p>
+                    <p>Then Run : <code class="language-markup">cd out</code></p>
+                    <p>Then Run : <code class="language-markup">serve -p 8080</code></p>
+                    <p>Now you can access your static app in <a href="http://localhost:8080">http://localhost:8080</a>. Everything should be working as usual. For more info please visit the <a href="https://nextjs.org/learn/excel/static-html-export/export-the-index-page" target="_blank">Official Doc.</a></p>
+                </section>
+
+                </section>
+
+                <section id="documenter_cover">
+                    <div class="page-header">
+                        <h3>Pages and Components Info</h3>
+                    </div>
+                    
+                    <div id="documenter_buttons"> </div>
+                        <ul>
+                            <li>Home Page Default (<b>/pages/index.js</b>)</li>
+                            <li>Home Page Two (<b>/pages/index2.js</b>)</li>
+                            <li>Home Page Three (<b>/pages/index3.js</b>)</li>
+                            <li>About Page (<b>/pages/about.js</b>)</li>
+                            <li>The Place Page (<b>/pages/the-place.js</b>)</li>
+                            <li>Events Page (<b>/pages/events.js</b>)</li>
+                            <li>Event Details Page (<b>/pages/event-details.js</b>)</li>
+                            <li>Gallery Page (<b>/pages/gallery.js</b>)</li>
+                            <li>Services Page (<b>/pages/services.js</b>)</li>
+                            <li>Service Details Page (<b>/pages/service-details.js</b>)</li>
+                            <li>Pricing Page (<b>/pages/pricing.js</b>)</li>
+                            <li>Team Page (<b>/pages/team.js</b>)</li>
+                            <li>News Style 1 Page (<b>/pages/news1.js</b>)</li>
+                            <li>News Style 2 Page (<b>/pages/news2.js</b>)</li>
+                            <li>News Details Page (<b>/pages/news-details.js</b>)</li>
+                            <li>Contact Page (<b>/pages/contact.js</b>)</li>
+							<li>Error Page (<b>/pages/error.js</b>)</li>
+                            <li>Etc....</li>
+                        </ul>
+                    <h6 style="margin-top:20px"><strong>Common Components:</strong></h6>
+                    <ul>
+                        <li>Navigation Default (<b>/components/Layout/Navbar.js</b>)</li>
+                        <li>Navigation Saas (<b>/components/Layout/NavbarTwo.js</b>)</li>
+                        <li>Footer (<b>/components/Layout/Footer.js</b>)</li>
+                        <li>GoTop (<b>/components/Shared/GoTop.js</b>)</li>
+                        <li>Loader (<b>/components/Shared/Loader.js</b>)</li>
+                        <li>Services Slider (<b>/components/Common/ServicesSlider</b>)</li>
+                        <li>Partner (<b>/components/Common/Partner</b>)</li>
+                        <li>JoinNow (<b>/components/Common/JoinNow</b>)</li>
+                        <li>FeedbackSlider (<b>/components/Common/FeedbackSlider</b>)</li>
+                        <li>OurMission (<b>/components/Common/OurMission</b>)</li>
+                        <li>OurTeamSlider (<b>/components/Common/OurTeamSlider</b>)</li>
+                        <li>OurPlace (<b>/components/Common/OurPlace</b>)</li>
+                        <li>OurBlog (<b>/components/Common/OurBlog</b>)</li>
+                        <li>WeOfferSlider (<b>/components/Common/WeOfferSlider</b>)</li>
+                        <li>VideoArea (<b>/components/Common/VideoArea</b>)</li>
+                    </ul>
+                    
+                    <h6 style="margin-top:20px"><strong>Template Features:</strong></h6>
+                    <ul>
+                        <li>ES6+</li>
+                        <li>React JS 16.14+</li>
+                        <li>Next JS 10.0+</li>
+                        <li>Bootstrap v5</li>
+                        <li>Simple client-side routing (page based)</li>
+                        <li>Easy Customization</li>
+                        <li>React Modal Video</li>
+                    </ul>
+                </section>
+
+                <section id="dependencies">
+                    <div class="page-header">
+                        <h3>Dependencies</h3>
+                    </div>
+                    <p> Here are the <strong>dependencies</strong> list which being used in the Tuam React Template:</p>
+                    <pre class="line-numbers">
+<code class="language-markup"> 
+"dependencies": {
+    "next": "^10.0.5",
+	"react": "^16.14.0",
+	"react-dom": "^16.14.0",
+	"react-image-lightbox": "^5.1.1",
+	"react-modal-video": "^1.2.6",
+	"react-owl-carousel3": "^2.2.5",
+	"sass": "^1.32.5"
+}
+</code>
+                    </pre class="brush:css">
+                </section>
+
+                <section id="change_layout">
+                    <div class="page-header">
+                        <h3>Change Default Home Page</h3>
+                    </div>
+                    <p>The default home page is <code class="language-markup">index.js</code> which placed in <code class="language-markup">/pages/index.js</code> if you want change this default to home page two as default home then just take backup your <code class="language-markup">index.js</code> & make <code class="language-markup">home-two.js</code> to <code class="language-markup">index.js</code> & that is.</p>
+                </section>
+
+                <section id="fonts_used">
+                    <div class="page-header">
+                        <h3>Fonts</h3>
+                    </div>
+                    <p> By default, the template loads <strong>IBM Plex Sans</strong> font from Google Web Font Services, you can change the font with the one that suits you best.</p>
+                    <p>You will find the font code in the &quot;<strong>style.scss</strong>&quot; file: <code class="language-css">/client/src/assets/css/style.scss</code></p>
+                    <pre class="line-numbers">
+<code class="language-css">
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap');
+</code>
+                    </pre>
+                </section>
+				
+				<section id="change_layout">
+                    <div class="page-header">
+                        <h3>How to run SCSS file</h3>
+                    </div>
+                    
+					<p>Please open the file Visual Studio Code Editor. 
+					And following the video tutorial.</p>
+					<p>Here the Link: <a href="https://www.youtube.com/watch?v=0MWmv1Gvv5w" target="_blank">https://www.youtube.com/watch?v=0MWmv1Gvv5w</a></p>
+                </section>
+                
+                <section id="credits">
+                    <div class="page-header">
+                        <h3>Credits</h3>
+                    </div>
+                    <strong>Images</strong><br>
+                    <a href="https://unsplash.com/" target="_blank">Unsplash</a><br />
+                    <a href="https://burst.shopify.com/" target="_blank">Burst</a><br />
+                    <a href="https://www.freepik.com/" target="_blank">Freepick</a><br />
+
+                    <div class="height-15"></div>
+
+                    <strong>Packages</strong><br>
+                    
+                    <a href="https://www.npmjs.com/package/react" target="_blank">React</a><br />
+                    <a href="https://www.npmjs.com/package/next" target="_blank">Next.js</a><br />
+                    <a href="https://expressjs.com/" target="_blank">Express JS</a><br />
+                    <a href="https://expressjs.com/" target="_blank">Express JS</a><br />
+
+                    <a href="https://www.npmjs.com/package/react-dom" target="_blank">ReactDom</a><br />
+                    <a href="https://www.npmjs.com/package/next-optimized-images" target="_blank">Next Optimized Images</a><br />
+                    <a href="https://www.npmjs.com/package/next-compose-plugins" target="_blank">Next Compose Plugins</a><br />
+
+                    <a href="https://getbootstrap.com/docs/4.3/getting-started/download/#npm" target="_blank">Bootstrap</a><br />
+                    <a href="https://www.npmjs.com/package/es6-promise" target="_blank">ES6-Promise</a><br />
+                    <a href="https://www.npmjs.com/package/isomorphic-fetch" target="_blank">isomorphic-fetch</a><br />
+                    <a href="https://www.npmjs.com/package/next-images" target="_blank">Next.js + Images</a><br />
+                    <a href="https://www.npmjs.com/package/react-image-lightbox" target="_blank">React Image Lightbox</a><br />
+                    <a href="https://www.npmjs.com/package/react-modal-video" target="_blank">react-modal-video</a><br />
+                    <a href="https://github.com/glennreyes/react-countup" target="_blank">React Countup</a><br />
+
+                    <a href="https://fonts.google.com/" target="_blank">Google Fonts</a><br />
+                    <a href="https://icofont.com/icons" target="_blank">Icofont</a><br />
+                    <a href="https://github.com/springload/react-accessible-accordion" target="_blank">react-accessible-accordion</a><br />
+                </section>
+                
+                <section id="supports">
+                    <div class="page-header">
+                        <h3 style="margin-top: 0; margin-bottom: 12px;">24-Hour Turnaround Support:</h3>
+                    </div>
+					 
+					<p>Quick, Dedicated &amp; Professional Support!</p>
+					
+					<p>We only provide support through our ticketing system. Please submit your ticket by visiting the <a href="https://support.envytheme.com/" target="_new">EnvyTheme Support System</a>.</p>
+					
+					<p>For any pre-purchase query, please use live chat on the item demo site also, email, and the item’s comment section on ThemeForest. Thanks!</p>
+                </section>
+            </article>
+            <!-- END Main content --> 
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container-fluid"> <a id="scroll-up" href="#"><i class="fa fa-angle-up"></i></a>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <p>Copyright &copy; 2021. All right reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END Footer -->
+
+    </body>
+</html>
