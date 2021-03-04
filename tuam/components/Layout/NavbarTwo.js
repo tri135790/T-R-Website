@@ -72,7 +72,7 @@ class NavbarTwo extends Component {
                                                     Home <i className="flaticon-down-arrow"></i>
                                                 </a>
                                             </Link>
-                                            <ul className="dropdown-menu">
+                                            {/* <ul className="dropdown-menu">
                                                 <li className="nav-item">
                                                     <Link href="/" activeClassName="active">
                                                         <a className="nav-link">Home One</a>
@@ -88,22 +88,22 @@ class NavbarTwo extends Component {
                                                         <a className="nav-link">Home Three</a>
                                                     </Link>
                                                 </li>
-                                            </ul>
+                                            </ul> */}
                                         </li>
 
                                         <li className="nav-item">
                                             <Link href="/about" activeClassName="active">
-                                                <a className="nav-link">About</a>
+                                                <a className="nav-link">About Us</a>
                                             </Link>
                                         </li>
 
                                         <li className="nav-item">
-                                            <Link href="/the-place" activeClassName="active">
-                                                <a className="nav-link">The Place</a>
+                                            <Link href="/services" activeClassName="active">
+                                                <a className="nav-link">Services</a>
                                             </Link>
                                         </li>
 
-                                        <li className="nav-item">
+                                        {/* <li className="nav-item">
                                             <Link href="/#">
                                                 <a className="nav-link" onClick={e => e.preventDefault()}>
                                                     Event <i className="flaticon-down-arrow"></i>
@@ -122,9 +122,9 @@ class NavbarTwo extends Component {
                                                     </Link>
                                                 </li>
                                             </ul>
-                                        </li>
+                                        </li> */}
 
-                                        <li className="nav-item">
+                                        {/* <li className="nav-item">
                                             <Link href="/#">
                                                 <a className="nav-link" onClick={e => e.preventDefault()}>
                                                     Pages <i className="flaticon-down-arrow"></i>
@@ -200,11 +200,11 @@ class NavbarTwo extends Component {
                                                     </Link>
                                                 </li>
                                             </ul>
-                                        </li>
+                                        </li> */}
 
                                         <li className="nav-item">
                                             <Link href="/contact" activeClassName="active">
-                                                <a className="nav-link">Contact</a>
+                                                <a className="nav-link">Contact Us</a>
                                             </Link>
                                         </li>
                                     </ul>
