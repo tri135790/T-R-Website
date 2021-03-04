@@ -69,7 +69,7 @@ class NavbarTwo extends Component {
                                         <li className="nav-item">
                                             <Link href="/#">
                                                 <a className="nav-link" onClick={e => e.preventDefault()}>
-                                                    Home <i className="flaticon-down-arrow"></i>
+                                                    Home 
                                                 </a>
                                             </Link>
                                             {/* <ul className="dropdown-menu">
