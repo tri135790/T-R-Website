@@ -1,6 +1,22 @@
 {
+  "/404": "pages/404.html",
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
-  "/_error": "pages/_error.js",
-  "/": "pages/index.js"
+  "/about": "pages/about.html",
+  "/contact": "pages/contact.html",
+  "/event-details": "pages/event-details.html",
+  "/events": "pages/events.html",
+  "/gallery": "pages/gallery.html",
+  "/": "pages/index.html",
+  "/index2": "pages/index2.html",
+  "/index3": "pages/index3.html",
+  "/news-details": "pages/news-details.html",
+  "/news1": "pages/news1.html",
+  "/news2": "pages/news2.html",
+  "/pricing": "pages/pricing.html",
+  "/service-details": "pages/service-details.html",
+  "/services": "pages/services.html",
+  "/team": "pages/team.html",
+  "/the-place": "pages/the-place.html",
+  "/_error": "pages/_error.js"
 }
