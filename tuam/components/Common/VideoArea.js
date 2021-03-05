@@ -18,8 +18,8 @@ class VideoArea extends Component {
                 <section className="video-area ptb-100 pb-0">
                     <div className="container">
                         <div className="video-content">
-                            <h2>Watch this video presentation to know more about our Coworking</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h2>Watch this video presentation to know more about our Products</h2>
+                            {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> */}
                         </div>
 
                         <div className="video-box">

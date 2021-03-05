@@ -27,8 +27,8 @@ class AboutUs extends Component {
                             <div className="col-lg-6 col-md-12">
                                 <div className="about-content">
                                     <span className="sub-title">About Us</span>
-                                    <h2>Professional, Creative, Flexible, Scalable Workspace</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                                    <h2>High Quality, Global Export</h2>
+                                    <p>T-R Construction Import Export Trading Service Co., Ltd, established on 03/08/2016, is one of the leading corporations in Viet Nam to produce N95 mask, medical gown and distrube medical products to international market. We also supply other essential medical products such as medicalgloves and ventilator made in Viet Nam and Japan.</p>
 
                                     <ul className="features-list">
                                         <li>
@@ -48,11 +48,11 @@ class AboutUs extends Component {
                                         </li>
                                     </ul>
                                     
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                                    {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p> */}
 
                                     <Link href="/about">
                                         <a className="read-more-btn">
-                                            More About Us <i className="flaticon-next"></i>
+                                            See our ISO &amp; FDA Certifications <i className="flaticon-next"></i>
                                         </a>
                                     </Link>
                                 </div>

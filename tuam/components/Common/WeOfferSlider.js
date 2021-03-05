@@ -53,8 +53,8 @@ class WeOfferSlider extends Component {
                 <section className="services-area ptb-100 bg-f8f8f8">
                     <div className="container">
                         <div className="section-title">
-                            <h2>We Offer creative working environments</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <h2>Our Products</h2>
+                            {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> */}
                         </div>
 
                         {this.state.display ? <OwlCarousel 
@@ -67,7 +67,7 @@ class WeOfferSlider extends Component {
                                 <div className="services-content">
                                     <h3>
                                         <Link href="#">
-                                            <a>Office Space</a>
+                                            <a>Medical Mask 3-Ply</a>
                                         </Link>
                                     </h3>
                                     <p>Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod</p>
@@ -75,12 +75,12 @@ class WeOfferSlider extends Component {
                             </div>
 
                             <div className="services-box">
-                                <img src="/images/gallery/gallery2.jpg" alt="image" />
+                                <img src="/images/gallery/gallery2.jfif" alt="image" />
 
                                 <div className="services-content">
                                     <h3>
                                         <Link href="#">
-                                            <a>Coworking</a>
+                                            <a>Medical Gloves</a>
                                         </Link>
                                     </h3>
                                     <p>Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod</p>
@@ -93,25 +93,25 @@ class WeOfferSlider extends Component {
                                 <div className="services-content">
                                     <h3>
                                         <Link href="#">
-                                            <a>Meeting Spaces</a>
+                                            <a>Medical Gown</a>
                                         </Link>
                                     </h3>
                                     <p>Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod</p>
                                 </div>
                             </div>
 
-                            <div className="services-box">
+                            {/* <div className="services-box">
                                 <img src="/images/gallery/gallery4.jpg" alt="image" />
 
                                 <div className="services-content">
                                     <h3>
                                         <Link href="#">
-                                            <a>Virtual Offices</a>
+                                            <a>T-R Mask N95</a>
                                         </Link>
                                     </h3>
                                     <p>Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod</p>
                                 </div>
-                            </div>
+                            </div> */}
                         </OwlCarousel> : ''}
                     </div>
                 </section>

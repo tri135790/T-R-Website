@@ -139,10 +139,10 @@ class Footer extends Component {
                                     <h3>Contact Info</h3>
 
                                     <ul className="footer-contact-info">
-                                        <li><span>Location:</span> 27 Division St, New York, NY 10002, USA</li>
-                                        <li><span>Email:</span> <a href="#">tuam@gmail.com</a></li>
-                                        <li><span>Phone:</span> <a href="#">+(321) 948 754</a></li>
-                                        <li><span>Fax:</span> <a href="#">+1-212-9876543</a></li>
+                                        <li><span>Location 1:</span> 4B Nguyen Van Cu, Cau Kho Ward, District 1, Ho Chi Minh City</li>
+                                        <li><span>Location 2:</span> Lot IV - 2, CN5 Street, Tan Binh Industrial Park, Tay Thanh Ward, Tan Phu District, Ho Chi Minh City</li>
+                                        <li><span>Email:</span> <a href="#">t-rgroup@t-r.com.vn</a></li>
+                                        <li><span>Phone:</span> <a href="#">+(84) 933 278 434</a></li>
                                         <li><a href="https://goo.gl/maps/1xz4L8TGSdkBhVmb7" target="_blank">View Location on GoogleMap</a></li>
                                     </ul>
                                 </div>

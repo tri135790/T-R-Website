@@ -4,7 +4,7 @@ import PageHeader from '../components/Services/PageHeader';
 import ServicesContent from '../components/Services/ServicesContent';
 import Footer from '../components/Layout/Footer';
 
-class Services extends Component {
+class Products extends Component {
     render() {
         return (
             <React.Fragment>
@@ -17,4 +17,4 @@ class Services extends Component {
     }
 }
 
-export default Services;
+export default Products;

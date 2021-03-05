@@ -98,8 +98,8 @@ class NavbarTwo extends Component {
                                         </li>
 
                                         <li className="nav-item">
-                                            <Link href="/services" activeClassName="active">
-                                                <a className="nav-link">Services</a>
+                                            <Link href="/products" activeClassName="active">
+                                                <a className="nav-link">Products</a>
                                             </Link>
                                         </li>
 
@@ -218,9 +218,9 @@ class NavbarTwo extends Component {
                                             <span className="number">+1 518 285679</span>
                                         </div>
 
-                                        <Link href="/#">
+                                        {/* <Link href="/#">
                                             <a className="default-btn">Schedule A Tour<span></span></a>
-                                        </Link>
+                                        </Link> */}
                                     </div>
                                 </div>
                             </nav>

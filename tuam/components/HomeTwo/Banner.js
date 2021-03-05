@@ -55,13 +55,13 @@ class Banner extends Component {
                                 <div className="d-table-cell">
                                     <div className="container">
                                         <div className="main-banner-content">
-                                            <span className="sub-title">The Best Workspace in New York</span>
-                                            <h1>Professional, Creative, Flexible, Scalable Workspace</h1>
+                                            {/* <span className="sub-title">The Best Workspace in New York</span> */}
+                                            <h1>Leading Manufacturer &amp; Supplier In Medical Facilities</h1>
 
                                             <div className="btn-box">
                                                 <Link href="#">
                                                     <a className="default-btn">
-                                                        Book A Room <span></span>
+                                                        About Us <span></span>
                                                     </a>
                                                 </Link>
 
@@ -78,46 +78,19 @@ class Banner extends Component {
                             </div>
                         </div>
 
-                        <div className="main-banner item-bg3">
-                            <div className="d-table">
-                                <div className="d-table-cell">
-                                    <div className="container">
-                                        <div className="main-banner-content">
-                                            <span className="sub-title">The Best Workspace in New York</span>
-                                            <h1>Professional, Creative, Flexible, Scalable Workspace</h1>
-
-                                            <div className="btn-box">
-                                                <Link href="#">
-                                                    <a className="default-btn">
-                                                        Book A Room <span></span>
-                                                    </a>
-                                                </Link>
-
-                                                {/* <div
-                                                    onClick={e => {e.preventDefault(); this.openModal()}}
-                                                    className="optional-btn"
-                                                > 
-                                                    <i className="flaticon-play-button"></i> Watch Video
-                                                </div> */}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
                         <div className="main-banner item-bg1">
                             <div className="d-table">
                                 <div className="d-table-cell">
                                     <div className="container">
                                         <div className="main-banner-content">
-                                            <span className="sub-title">The Best Workspace in New York</span>
-                                            <h1>Professional, Creative, Flexible, Scalable Workspace</h1>
+                                            {/* <span className="sub-title">The Best Workspace in New York</span> */}
+                                            <h1>Leading Manufacturer &amp; Supplier In Medical Facilities</h1>
 
                                             <div className="btn-box">
                                                 <Link href="#">
                                                     <a className="default-btn">
-                                                        Book A Room <span></span>
+                                                    About Us <span></span>
                                                     </a>
                                                 </Link>
 

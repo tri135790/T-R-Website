@@ -35,12 +35,12 @@ class Partner extends Component {
 
     _isMounted = false;
     state = {
-        display:false,
-    } 
+        display: false,
+    }
 
-    componentDidMount(){ 
+    componentDidMount() {
         this._isMounted = true;
-        this.setState({ display: true }) 
+        this.setState({ display: true })
     }
 
     componentWillUnmount() {
@@ -53,10 +53,10 @@ class Partner extends Component {
                 <section className="partner-area ptb-100 bg-f8f8f8">
                     <div className="container">
                         <div className="partner-title">
-                            <h2>Trusted by 20,000 Companies</h2>
+                            <h2>Many health care companies trust our expertise and partner with us</h2>
                         </div>
 
-                        {this.state.display ? <OwlCarousel 
+                        {this.state.display ? <OwlCarousel
                             className="partner-slides owl-carousel owl-theme"
                             {...options}
                         >
