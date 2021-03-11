@@ -13,25 +13,19 @@ import FeedbackSlider from '../components/Common/FeedbackSlider';
 import OurPlace from '../components/Common/OurPlace';
 import OurBlog from '../components/Common/OurBlog';
 import Footer from '../components/Layout/Footer';
+import './i18n';
 
 class Index extends Component {
     render() {
         return (
             <React.Fragment>
-                <NavbarTwo />
-                <Banner />
-                <AboutUs />
-                <WeOfferSlider />
-                <VideoArea />
-                <Partner />
-                {/* <OurServices />
-                <Gallery />
-                <PriceTable />
-                <JoinNow />
-                <FeedbackSlider />
-                <OurPlace />
-                <OurBlog />  */}
-                <Footer />
+                <NavbarTwo useSuspense={false} />
+                <Banner useSuspense={false}/>
+                <AboutUs useSuspense={false}/>
+                <WeOfferSlider useSuspense={false} />
+                <VideoArea  useSuspense={false} />
+                <Partner useSuspense={false}/>
+                <Footer useSuspense={false}/>
             </React.Fragment>
         );
     }

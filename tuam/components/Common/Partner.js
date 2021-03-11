@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
+import { withTranslation } from 'react-i18next';
 const OwlCarousel = dynamic(import('react-owl-carousel3'));
 
 const options = {
@@ -48,12 +49,13 @@ class Partner extends Component {
     }
 
     render() {
+        const { t } = this.props;
         return (
             <React.Fragment>
                 <section className="partner-area ptb-100 bg-f8f8f8">
                     <div className="container">
                         <div className="partner-title">
-                            <h2>Many health care companies trust our expertise and partner with us</h2>
+                            <h2>{t('Partner.1')}</h2>
                         </div>
 
                         {this.state.display ? <OwlCarousel
@@ -123,4 +125,4 @@ class Partner extends Component {
     }
 }
 
-export default Partner;
+export default withTranslation()(Partner);

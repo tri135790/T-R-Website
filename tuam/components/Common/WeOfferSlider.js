@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
+import { withTranslation } from 'react-i18next';
 const OwlCarousel = dynamic(import('react-owl-carousel3'));
 
 const options = {
@@ -48,13 +49,13 @@ class WeOfferSlider extends Component {
     }
 
     render() {
+        const { t } = this.props;
         return (
             <React.Fragment>
                 <section className="services-area ptb-100 bg-f8f8f8">
                     <div className="container">
                         <div className="section-title">
-                            <h2>Our Products</h2>
-                            {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> */}
+                            <h2>{t('Products.2')}</h2>
                         </div>
 
                         {this.state.display ? <OwlCarousel 
@@ -67,7 +68,7 @@ class WeOfferSlider extends Component {
                                 <div className="services-content">
                                     <h3>
                                         <Link href="#">
-                                            <a>Medical Mask 3-Ply</a>
+                                            <a>{t('Products.3')}</a>
                                         </Link>
                                     </h3>
                                     <p>Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod</p>
@@ -80,7 +81,7 @@ class WeOfferSlider extends Component {
                                 <div className="services-content">
                                     <h3>
                                         <Link href="#">
-                                            <a>Medical Gloves</a>
+                                            <a>{t('Products.4')}</a>
                                         </Link>
                                     </h3>
                                     <p>Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod</p>
@@ -93,25 +94,12 @@ class WeOfferSlider extends Component {
                                 <div className="services-content">
                                     <h3>
                                         <Link href="#">
-                                            <a>Medical Gown</a>
+                                            <a>{t('Products.5')}</a>
                                         </Link>
                                     </h3>
                                     <p>Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod</p>
                                 </div>
                             </div>
-
-                            {/* <div className="services-box">
-                                <img src="/images/gallery/gallery4.jpg" alt="image" />
-
-                                <div className="services-content">
-                                    <h3>
-                                        <Link href="#">
-                                            <a>T-R Mask N95</a>
-                                        </Link>
-                                    </h3>
-                                    <p>Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod</p>
-                                </div>
-                            </div> */}
                         </OwlCarousel> : ''}
                     </div>
                 </section>
@@ -120,4 +108,4 @@ class WeOfferSlider extends Component {
     }
 }
 
-export default WeOfferSlider;
+export default withTranslation()(WeOfferSlider);

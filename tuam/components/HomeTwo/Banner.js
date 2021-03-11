@@ -3,6 +3,8 @@ import Link from 'next/link';
 import ModalVideo from 'react-modal-video';
 import '../../node_modules/react-modal-video/css/modal-video.min.css';
 import dynamic from 'next/dynamic';
+import { withTranslation } from 'react-i18next';
+
 const OwlCarousel = dynamic(import('react-owl-carousel3'));
 
 const options = {
@@ -25,13 +27,13 @@ class Banner extends Component {
 
     _isMounted = false;
     state = {
-        display:false,
+        display: false,
         isOpen: false,
     }
 
-    componentDidMount(){ 
+    componentDidMount() {
         this._isMounted = true;
-        this.setState({ display: true }) 
+        this.setState({ display: true })
     }
 
     componentWillUnmount() {
@@ -39,14 +41,16 @@ class Banner extends Component {
     }
 
     openModal = () => {
-        this.setState({isOpen: true})
+        this.setState({ isOpen: true })
     }
 
     render() {
+
+        const { t } = this.props;
         return (
             <React.Fragment>
                 <div className="home-section">
-                    {this.state.display ? <OwlCarousel 
+                    {this.state.display ? <OwlCarousel
                         className="home-slides owl-carousel owl-theme"
                         {...options}
                     >
@@ -55,22 +59,17 @@ class Banner extends Component {
                                 <div className="d-table-cell">
                                     <div className="container">
                                         <div className="main-banner-content">
-                                            {/* <span className="sub-title">The Best Workspace in New York</span> */}
-                                            <h1>Leading Manufacturer &amp; Supplier In Medical Facilities</h1>
+                                            <h1>
+                                                {t('Title.1')}
+                                            </h1>
 
                                             <div className="btn-box">
                                                 <Link href="#">
                                                     <a className="default-btn">
-                                                        About Us <span></span>
+                                                    {t('About Us.1')} <span></span>
                                                     </a>
                                                 </Link>
 
-                                                {/* <div
-                                                    onClick={e => {e.preventDefault(); this.openModal()}}
-                                                    className="optional-btn"
-                                                > 
-                                                    <i className="flaticon-play-button"></i> Watch Video
-                                                </div> */}
                                             </div>
                                         </div>
                                     </div>
@@ -84,22 +83,14 @@ class Banner extends Component {
                                 <div className="d-table-cell">
                                     <div className="container">
                                         <div className="main-banner-content">
-                                            {/* <span className="sub-title">The Best Workspace in New York</span> */}
-                                            <h1>Leading Manufacturer &amp; Supplier In Medical Facilities</h1>
+                                            <h1>{t('Title.1')}</h1>
 
                                             <div className="btn-box">
                                                 <Link href="#">
                                                     <a className="default-btn">
-                                                    About Us <span></span>
+                                                    {t('About Us.1')} <span></span>
                                                     </a>
                                                 </Link>
-
-                                                {/* <div
-                                                    onClick={e => {e.preventDefault(); this.openModal()}}
-                                                    className="optional-btn"
-                                                > 
-                                                    <i className="flaticon-play-button"></i> Watch Video
-                                                </div> */}
                                             </div>
                                         </div>
                                     </div>
@@ -107,62 +98,16 @@ class Banner extends Component {
                             </div>
                         </div>
                     </OwlCarousel> : ''}
- 
-                    <div className="banner-footer">
-                        <div className="container-fluid p-0">
-                            <div className="row m-0 align-items-center">
-                                <div className="col-lg-5 col-md-12 p-0">
-                                    {/* <div className="banner-video">
-                                        <div
-                                            onClick={e => {e.preventDefault(); this.openModal()}}
-                                            className="video-btn"
-                                        > 
-                                            <i className="flaticon-play-button-1"></i>
-                                        </div>
-                                  
-                                        <span>Watch Video</span>
-                                    </div> */}
-                                </div>
-
-                                <div className="col-lg-7 col-md-12 p-0">
-                                    <div className="banner-contact-info">
-                                        <ul>
-                                            <li>
-                                                <i className="flaticon-location"></i>
-                                                <span>Office Address</span>
-                                                27 Division St, New York, NY 10002, USA
-                                            </li>
-
-                                            <li>
-                                                <i className="flaticon-email"></i>
-                                                <span>Email Address</span>
-                                                <a href="#">info@tuam.com</a>
-                                                <a href="#">support@tuam.com</a>
-                                            </li>
-
-                                            <li>
-                                                <i className="flaticon-calendar"></i>
-                                                <span>Office Hour</span>
-                                                Mon - Fri, 8 AM - 10 PM (Members are 24/7)
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-
-                {/* If you want change the video need to update below videoID */}
-                <ModalVideo 
-                    channel='youtube' 
-                    isOpen={this.state.isOpen} 
-                    videoId='szuchBiLrEM' 
-                    onClose={() => this.setState({isOpen: false})} 
+                <ModalVideo
+                    channel='youtube'
+                    isOpen={this.state.isOpen}
+                    videoId='szuchBiLrEM'
+                    onClose={() => this.setState({ isOpen: false })}
                 />
             </React.Fragment>
         );
     }
 }
 
-export default Banner;
+export default withTranslation()(Banner);

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import ModalVideo from 'react-modal-video';
+import { withTranslation } from 'react-i18next';
 
 class VideoArea extends Component {
 
@@ -13,13 +14,13 @@ class VideoArea extends Component {
     }
 
     render() {
+        const { t } = this.props;
         return (
             <React.Fragment>
                 <section className="video-area ptb-100 pb-0">
                     <div className="container">
                         <div className="video-content">
-                            <h2>Watch this video presentation to know more about our Products</h2>
-                            {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> */}
+                            <h2>{t('Watch Video.1')}</h2>
                         </div>
 
                         <div className="video-box">
@@ -33,13 +34,12 @@ class VideoArea extends Component {
                                     <i className="flaticon-play-button-1"></i>
                                 </div>
                            
-                                <span>Watch Now</span>
+                                <span>{t('Watch Video.2')}</span>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                {/* If you want change the video need to update below videoID */}
                 <ModalVideo 
                     channel='youtube' 
                     isOpen={this.state.isOpen} 
@@ -51,4 +51,4 @@ class VideoArea extends Component {
     }
 }
 
-export default VideoArea;
+export default withTranslation()(VideoArea);

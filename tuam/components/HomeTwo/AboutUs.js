@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
+import { withTranslation } from 'react-i18next';
 
 class AboutUs extends Component {
     render() {
+        const { t } = this.props;
         return (
             <React.Fragment>
                 <section className="about-section ptb-100">
@@ -26,33 +28,12 @@ class AboutUs extends Component {
 
                             <div className="col-lg-6 col-md-12">
                                 <div className="about-content">
-                                    <span className="sub-title">About Us</span>
-                                    <h2>High Quality, Global Export</h2>
-                                    <p>T-R Construction Import Export Trading Service Co., Ltd, established on 03/08/2016, is one of the leading corporations in Viet Nam to produce N95 mask, medical gown and distrube medical products to international market. We also supply other essential medical products such as medicalgloves and ventilator made in Viet Nam and Japan.</p>
-
-                                    <ul className="features-list">
-                                        <li>
-                                            <div className="icon">
-                                                <i className="flaticon-work"></i>
-                                            </div>
-                                            <span>Trusted by Thousands</span>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        </li>
-
-                                        <li>
-                                            <div className="icon">
-                                                <i className="flaticon-target"></i>
-                                            </div>
-                                            <span>Workspace Solutions</span>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        </li>
-                                    </ul>
-                                    
-                                    {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p> */}
-
+                                    <span className="sub-title">{t('About Us.1')}</span>
+                                    <h2>{t('Subtitle About Us 1.1')}</h2>
+                                    <p>{t('Subtitle About Us 2.1')}</p>
                                     <Link href="/about">
                                         <a className="read-more-btn">
-                                            See our ISO &amp; FDA Certifications <i className="flaticon-next"></i>
+                                        {t('See our ISO & FDA Certifications.1')} <i className="flaticon-next"></i>
                                         </a>
                                     </Link>
                                 </div>
@@ -65,4 +46,4 @@ class AboutUs extends Component {
     }
 }
 
-export default AboutUs;
+export default withTranslation()(AboutUs);
