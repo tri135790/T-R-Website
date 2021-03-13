@@ -28,8 +28,8 @@ i18n
     fallbackLng: 'en',
     lng: 'vn',
     debug: true,
-    ns: ['common', 'search'],
-    defaultNS: 'common',
+    ns: ['translation'],
+    defaultNS: 'translation',
     whitelist: Languages,
 
     interpolation: {
