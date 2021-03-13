@@ -25,7 +25,6 @@ i18n
   .init({
     backend: {
       crossDomain: true,
-      loadPath: '/locales/{{lng}}/{{ns}}.json',
     },
     fallbackLng: 'en',
     lng: 'vn',
