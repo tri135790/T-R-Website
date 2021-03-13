@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import Navbar from '../components/Layout/Navbar';
+import NavbarTwo from '../components/Layout/NavbarTwo';
 import PageHeader from '../components/Services/PageHeader';
-import ServicesContent from '../components/Services/ServicesContent';
+import NewsCardContent from '../components/News1/NewsCardContent';
 import Footer from '../components/Layout/Footer';
 
 class Products extends Component {
     render() {
         return (
             <React.Fragment>
-                <Navbar />
-                <PageHeader />
-                <ServicesContent />
-                <Footer />
+                <NavbarTwo useSuspense={false} />
+                <PageHeader useSuspense={false} />
+                <NewsCardContent useSuspense={false} />
+                <Footer useSuspense={false}/>
             </React.Fragment>
         );
     }

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { withTranslation } from 'react-i18next';
 
 class AboutText extends Component {
     render() {
+        const { t } = this.props;
         return (
             <React.Fragment>
                 <section className="about-area ptb-100">
@@ -9,14 +11,14 @@ class AboutText extends Component {
                         <div className="row align-items-center">
                             <div className="col-lg-6 col-md-12">
                                 <div className="about-title">
-                                    <span>About Us</span>
-                                    <h2>We offer creative working environments that suit your business</h2>
+                                    <span>{t('About Us.1')}</span>
+                                    <h2>{t('About Us.2')}</h2>
                                 </div>
                             </div>
 
                             <div className="col-lg-6 col-md-12">
                                 <div className="about-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                                    <p>{t('About Us.3')}</p>
                                 </div>
                             </div>
                         </div>
@@ -27,4 +29,4 @@ class AboutText extends Component {
     }
 }
 
-export default AboutText;
+export default withTranslation()(AboutText);

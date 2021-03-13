@@ -76,7 +76,7 @@ class WeOfferSlider extends Component {
                             </div>
 
                             <div className="services-box">
-                                <img src="/images/gallery/gallery2.jfif" alt="image" />
+                                <img src="/images/gallery/gallery2.jpg" alt="image" />
 
                                 <div className="services-content">
                                     <h3>
