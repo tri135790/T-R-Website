@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Navbar from '../components/Layout/Navbar';
+import NavbarTwo from '../components/Layout/NavbarTwo';
+// import Navbar from '../components/Layout/Navbar';
 import PageHeader from '../components/About/PageHeader';
 import AboutText from '../components/About/AboutText';
 import ServicesSlider from '../components/Common/ServicesSlider';
@@ -14,16 +15,16 @@ class About extends Component {
     render() {
         return (
             <React.Fragment>
-                <Navbar />
-                <PageHeader />
-                <AboutText />
-                <ServicesSlider />
-                <OurMission />
-                <OurTeamSlider />
-                <JoinNow />
-                <FeedbackSlider />
-                <Partner />
-                <Footer />
+                <NavbarTwo useSuspense={false} />
+                <PageHeader useSuspense={false} />
+                <AboutText useSuspense={false} />
+                <ServicesSlider useSuspense={false} />
+                <OurMission useSuspense={false} />
+                <OurTeamSlider useSuspense={false} />
+                <JoinNow useSuspense={false} />
+                <FeedbackSlider useSuspense={false} />
+                <Partner useSuspense={false} />
+                <Footer useSuspense={false} />
             </React.Fragment>
         );
     }

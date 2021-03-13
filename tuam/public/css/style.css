@@ -5743,4 +5743,42 @@ Go Top CSS
   visibility: visible;
   top: 50%;
 }
+
+.btn-group-sm>.language-button.btn {
+  font-size: 0.7rem;
+
+}
+.language-button {
+   background-color: transparent;
+   border-color: #d99739;
+  box-shadow: none;
+  color: white;
+}
+
+.language-button.active {
+  border-color: #d99739;
+  background-color: #d99739;
+  box-shadow: none;
+  color: white;
+}
+
+.language-button:hover {
+  border-color: #d99739;
+  background-color: #d99739;
+  box-shadow: none;
+  color: white;
+}
+
+.language-button.active:focus {
+  box-shadow: none;
+}
+
+.language-button:focus + .language-button, .language-button:focus {
+  box-shadow: none;
+}
+
+#language-button-mobile {
+  left: 50%;
+  margin-left: -14rem;
+}
 /*# sourceMappingURL=style.css.map */

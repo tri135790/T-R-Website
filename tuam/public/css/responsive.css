@@ -112,7 +112,7 @@
     left: auto;
     right: 10px;
   }
-  .banner-footer {
+  .banner-footer, #language-button-desktop {
     display: none;
   }
   .home-section .main-banner {
@@ -1150,7 +1150,7 @@
     left: auto;
     right: 15px;
   }
-  .home-section .banner-footer .banner-video {
+  .home-section .banner-footer .banner-video, #language-button-mobile {
     display: none;
   }
   .home-section .banner-footer .banner-contact-info {
@@ -1494,7 +1494,7 @@
   .tuam-nav .navbar .others-option .call-us {
     padding-left: 0;
   }
-  .tuam-nav .navbar .others-option .call-us .icon {
+  .tuam-nav .navbar .others-option .call-us .icon, #language-button-mobile {
     display: none;
   }
   .tuam-nav .navbar .others-option .default-btn {
@@ -1646,6 +1646,14 @@
 @media only screen and (min-width: 1550px) {
   .main-banner {
     height: 100vh;
+  }
+  #language-button-mobile {
+    display: none;
+  }
+}
+@media only screen and (min-width: 767px ) {
+  #language-button-mobile {
+    display: none;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
