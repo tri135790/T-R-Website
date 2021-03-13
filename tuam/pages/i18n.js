@@ -26,7 +26,6 @@ i18n
       crossDomain: true
     },
     fallbackLng: 'en',
-    lng: 'vn',
     debug: true,
     whitelist: Languages,
 
