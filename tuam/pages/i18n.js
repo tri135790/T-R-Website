@@ -26,7 +26,10 @@ i18n
       crossDomain: true
     },
     fallbackLng: 'en',
+    lng: 'vn',
     debug: true,
+    ns: ['common', 'search'],
+    defaultNS: 'common',
     whitelist: Languages,
 
     interpolation: {
