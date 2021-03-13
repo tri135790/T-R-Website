@@ -23,10 +23,15 @@ i18n
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     backend: {
+      // loadPath: '/locales/resources.json?lng={{lng}}&ns={{ns}}',
+    allowMultiLoading: true,
       crossDomain: true
     },
-    fallbackLng: 'en',
-    lng: 'vn',
+    fallbackLng: {
+      'en-US': ['en'],
+      'vn-VN': ['vn'],
+      default: ['vn'],
+    },
     debug: true,
     ns: ['translation'],
     defaultNS: 'translation',
