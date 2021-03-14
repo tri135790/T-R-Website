@@ -13,14 +13,12 @@ import FeedbackSlider from '../components/Common/FeedbackSlider';
 import OurPlace from '../components/Common/OurPlace';
 import OurBlog from '../components/Common/OurBlog';
 import Footer from '../components/Layout/Footer';
-import { I18nextProvider } from 'react-i18next';
-import i18n from './i18n';
+import './i18n';
 
 class Index extends Component {
     render() {
         return (
-            <I18nextProvider i18n={i18n}>
-                <React.Fragment>
+            <React.Fragment>
                 <NavbarTwo useSuspense={false} />
                 <Banner useSuspense={false}/>
                 <AboutUs useSuspense={false}/>
@@ -29,8 +27,6 @@ class Index extends Component {
                 <Partner useSuspense={false}/>
                 <Footer useSuspense={false}/>
             </React.Fragment>
-            </I18nextProvider>
-            
         );
     }
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import { withTranslation } from 'react-i18next';
+// import { withTranslation } from 'next-i18next';
 
 class NewsCardContent extends Component {
     render() {

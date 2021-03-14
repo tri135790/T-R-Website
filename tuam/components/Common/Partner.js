@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
-import { withNamespaces } from 'react-i18next';
+import { withTranslation } from 'react-i18next';
+// import { withTranslation } from 'next-i18next';
 const OwlCarousel = dynamic(import('react-owl-carousel3'));
 
 const options = {
@@ -125,4 +126,4 @@ class Partner extends Component {
     }
 }
 
-export default withNamespaces()(Partner);
+export default withTranslation()(Partner);

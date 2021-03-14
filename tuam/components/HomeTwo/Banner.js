@@ -3,7 +3,7 @@ import Link from 'next/link';
 import ModalVideo from 'react-modal-video';
 import '../../node_modules/react-modal-video/css/modal-video.min.css';
 import dynamic from 'next/dynamic';
-import { withNamespaces } from 'react-i18next';
+import { withTranslation } from 'react-i18next';
 
 const OwlCarousel = dynamic(import('react-owl-carousel3'));
 
@@ -110,4 +110,4 @@ class Banner extends Component {
     }
 }
 
-export default withNamespaces()(Banner);
+export default withTranslation()(Banner);

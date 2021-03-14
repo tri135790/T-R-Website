@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { withNamespaces } from 'react-i18next';
+import { withTranslation } from 'react-i18next';
+// import { withTranslation } from 'next-i18next';
 
 class AboutText extends Component {
     render() {
@@ -29,4 +30,4 @@ class AboutText extends Component {
     }
 }
 
-export default withNamespaces()(AboutText);
+export default withTranslation()(AboutText);
