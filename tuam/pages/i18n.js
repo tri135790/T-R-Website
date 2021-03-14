@@ -25,9 +25,10 @@ i18n
   .init({
     backend: {
       crossDomain: true,
+      loadPath: "https://atr-website-demo.vercel.app/public/locales/{{lng}}/{{ns}}.json"
     },
     fallbackLng: 'en',
-    lng: 'vn',
+    // lng: 'vn',
     debug: true,
     whitelist: Languages,
 
