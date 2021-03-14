@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
-import { withTranslation } from 'react-i18next';
+import { withNamespaces } from 'react-i18next';
 
 class PageHeader extends Component {
     render() {
@@ -31,4 +31,4 @@ class PageHeader extends Component {
     }
 }
 
-export default withTranslation()(PageHeader);
+export default withNamespaces()(PageHeader);

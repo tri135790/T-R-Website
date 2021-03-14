@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
-import { withTranslation } from 'react-i18next';
+import { withNamespaces } from 'react-i18next';
 
 class Footer extends Component {
     render() {
@@ -164,4 +164,4 @@ class Footer extends Component {
     }
 }
 
-export default withTranslation()(Footer);
+export default withNamespaces()(Footer);

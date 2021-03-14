@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
-import { withTranslation } from 'react-i18next';
+import { withNamespaces } from 'react-i18next';
 const OwlCarousel = dynamic(import('react-owl-carousel3'));
 
 const options = {
@@ -108,4 +108,4 @@ class WeOfferSlider extends Component {
     }
 }
 
-export default withTranslation()(WeOfferSlider);
+export default withNamespaces()(WeOfferSlider);

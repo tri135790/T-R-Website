@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import ModalVideo from 'react-modal-video';
-import { withTranslation } from 'react-i18next';
+import { withNamespaces } from 'react-i18next';
 
 class VideoArea extends Component {
 
@@ -51,4 +51,4 @@ class VideoArea extends Component {
     }
 }
 
-export default withTranslation()(VideoArea);
+export default withNamespaces()(VideoArea);
