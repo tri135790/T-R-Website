@@ -11,8 +11,9 @@ import App from 'next/app';
 import Head from 'next/head';
 import Loader from '../components/Shared/Loader';
 import GoTop from '../components/Shared/GoTop';
+import { appWithTranslation } from 'next-i18next'
 
-export default class MyApp extends App {
+class MyApp extends App {
     // Preloader
     state = {
         loading: true
@@ -49,3 +50,5 @@ export default class MyApp extends App {
         );
     }
 }
+
+export default  appWithTranslation(MyApp)
