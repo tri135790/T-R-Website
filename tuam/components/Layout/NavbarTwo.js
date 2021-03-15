@@ -1,8 +1,6 @@
 import React, { Component, useState  } from 'react';
 import Link from '../../utils/ActiveLink';
 import { withTranslation } from 'react-i18next';
-// import { withTranslation } from 'next-i18next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import i18n from '../../pages/i18n';
 import 'react-dropdown/style.css';
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
@@ -127,11 +125,5 @@ class NavbarTwo extends Component {
         );
     }
 }
-
-export const getStaticProps = async ({ locale }) => ({
-    props: {
-      ...await serverSideTranslations(locale, ['translation']),
-    },
-  })
 
 export default withTranslation()(NavbarTwo);
