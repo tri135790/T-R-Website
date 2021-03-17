@@ -4,7 +4,7 @@ import Link from 'next/link';
 class NewsSideBar extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <aside className="widget-area" id="secondary">
                     {/* Search */}
                     <div className="widget widget_search">
@@ -293,7 +293,7 @@ class NewsSideBar extends Component {
                         </div>
                     </div>
                 </aside>
-            </React.Fragment>
+            </>
         );
     }
 }

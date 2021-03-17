@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 class MyDocument extends Document {
     render() {
@@ -15,5 +16,11 @@ class MyDocument extends Document {
         )
     }
 }
+
+export const getStaticProps = async ({locale}) => ({
+  props: {
+    ...await serverSideTranslations(locale, ['common']),
+  },
+})
 
 export default MyDocument;

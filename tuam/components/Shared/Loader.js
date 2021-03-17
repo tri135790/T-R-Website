@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Loader extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <div className={`preloader ${this.props.loading ? '' : 'preloader-deactivate'}`}>
                     <div id="global">
                         <div id="top" className="mask">
@@ -21,7 +21,7 @@ class Loader extends Component {
                         <p><i>LOADING...</i></p>
                     </div>
                 </div>
-            </React.Fragment>
+            </>
         );
     }
 }

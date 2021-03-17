@@ -12,6 +12,7 @@ import Head from 'next/head';
 import Loader from '../components/Shared/Loader';
 import GoTop from '../components/Shared/GoTop';
 import { appWithTranslation } from 'next-i18next'
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 class MyApp extends App {
     // Preloader
@@ -32,7 +33,7 @@ class MyApp extends App {
         const { Component, pageProps } = this.props
 
         return (
-            <React.Fragment>
+            <>
                 <Head>
                     <meta charSet="utf-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -46,9 +47,15 @@ class MyApp extends App {
 
                 {/* Go Top Button */}
                 <GoTop scrollStepInPx="50" delayInMs="16.66" />
-            </React.Fragment>
+            </>
         );
     }
 }
+
+export const getStaticProps = async ({locale}) => ({
+    props: {
+        ...await serverSideTranslations(locale, ['common']),
+    },
+})
 
 export default  appWithTranslation(MyApp)

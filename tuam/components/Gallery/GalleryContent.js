@@ -25,7 +25,7 @@ class Gallery extends Component {
     render() {
         const { photoIndex, isOpenImage } = this.state;
         return (
-            <React.Fragment>
+            <>
                 <section className="gallery-area ptb-100 pb-0">
                     <div className="container">
                         <div className="section-title">
@@ -189,7 +189,7 @@ class Gallery extends Component {
                         </div>
                     </div>
                 </section>
-            </React.Fragment>
+            </>
         );
     }
 }

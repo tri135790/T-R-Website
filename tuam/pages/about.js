@@ -10,11 +10,12 @@ import JoinNow from '../components/Common/JoinNow';
 import FeedbackSlider from '../components/Common/FeedbackSlider';
 import Partner from '../components/Common/Partner';
 import Footer from '../components/Layout/Footer';
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 class About extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <NavbarTwo useSuspense={false} />
                 <PageHeader useSuspense={false} />
                 <AboutText useSuspense={false} />
@@ -25,9 +26,15 @@ class About extends Component {
                 <FeedbackSlider useSuspense={false} />
                 <Partner useSuspense={false} />
                 <Footer useSuspense={false} />
-            </React.Fragment>
+            </>
         );
     }
 }
+
+export const getStaticProps = async ({locale}) => ({
+  props: {
+    ...await serverSideTranslations(locale, ['common']),
+  },
+})
 
 export default About;

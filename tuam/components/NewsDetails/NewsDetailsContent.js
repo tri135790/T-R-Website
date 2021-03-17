@@ -5,7 +5,7 @@ import NewsSideBar from '../News2/NewsSideBar';
 class NewsDetailsContent extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <div className="blog-details-area ptb-100">
                     <div className="container">
                         <div className="row">
@@ -358,7 +358,7 @@ class NewsDetailsContent extends Component {
                         </div>
                     </div>
                 </div>
-            </React.Fragment>
+            </>
         );
     }
 }

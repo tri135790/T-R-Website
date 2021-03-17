@@ -4,7 +4,7 @@ import Link from 'next/link';
 class PageHeader extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <div className="page-title-area item-bg1">
                     <div className="d-table">
                         <div className="d-table-cell">
@@ -24,7 +24,7 @@ class PageHeader extends Component {
                         </div>
                     </div>
                 </div>
-            </React.Fragment>
+            </>
         );
     }
 }

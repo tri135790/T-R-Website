@@ -4,7 +4,7 @@ import Link from 'next/link';
 class EventDetailsContent extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <section className="event-details-area ptb-100">
                     <div className="container">
                         <div className="row">
@@ -120,7 +120,7 @@ class EventDetailsContent extends Component {
                         </div>
                     </div>
                 </section>
-            </React.Fragment>
+            </>
         );
     }
 }

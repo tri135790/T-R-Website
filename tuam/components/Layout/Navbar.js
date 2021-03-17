@@ -36,7 +36,7 @@ class Navbar extends Component {
         const classTwo = collapsed ? 'navbar-toggler navbar-toggler-right collapsed' : 'navbar-toggler navbar-toggler-right';
 
         return (
-            <React.Fragment>
+            <>
                 <div id="navbar" className="navbar-area">
                     <div className="tuam-nav">
                         <div className="container">
@@ -220,7 +220,7 @@ class Navbar extends Component {
                         </div>
                     </div>
                 </div>
-            </React.Fragment>
+            </>
         );
     }
 }

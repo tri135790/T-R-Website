@@ -13,11 +13,12 @@ import FeedbackSlider from '../components/Common/FeedbackSlider';
 import OurPlace from '../components/Common/OurPlace';
 import OurBlog from '../components/Common/OurBlog';
 import Footer from '../components/Layout/Footer';
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 class Index extends Component {
     render() {
         return (
-                <React.Fragment>
+                <>
                     <NavbarTwo useSuspense={false} />
                     <Banner useSuspense={false} />
                     <AboutUs useSuspense={false} />
@@ -25,10 +26,16 @@ class Index extends Component {
                     <VideoArea useSuspense={false} />
                     <Partner useSuspense={false} />
                     <Footer useSuspense={false} />
-                </React.Fragment>
+                </>
 
         );
     }
 }
+
+export const getStaticProps = async ({locale}) => ({
+  props: {
+    ...await serverSideTranslations(locale, ['common']),
+  },
+})
 
 export default Index;

@@ -4,7 +4,7 @@ import Link from 'next/link';
 class OurServices extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <section className="services-area ptb-100">
                     <div className="container">
                         <div className="section-title">
@@ -189,7 +189,7 @@ class OurServices extends Component {
                         </div>
                     </div>
                 </section>
-            </React.Fragment>
+            </>
         );
     }
 }

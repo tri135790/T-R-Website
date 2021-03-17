@@ -21,7 +21,7 @@ class FloorPlans extends Component {
 
     render() {
         return (
-            <React.Fragment>
+            <>
                 <section className="floor-plans-area ptb-100">
                     <div className="container">
                         <div className="section-title">
@@ -218,7 +218,7 @@ class FloorPlans extends Component {
                         </div>
                     </div>
                 </section>
-            </React.Fragment>
+            </>
         );
     }
 }

@@ -43,7 +43,7 @@ class Banner extends Component {
 
     render() {
         return (
-            <React.Fragment>
+            <>
                 {this.state.display ? <OwlCarousel 
                     className="home-area home-slides owl-carousel owl-theme"
                     {...options}
@@ -134,7 +134,7 @@ class Banner extends Component {
                     videoId='szuchBiLrEM' 
                     onClose={() => this.setState({isOpen: false})} 
                 />
-            </React.Fragment>
+            </>
         );
     }
 }

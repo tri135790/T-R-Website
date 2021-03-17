@@ -4,11 +4,12 @@ import PageHeader from '../components/Team/PageHeader';
 import TeamContent from '../components/Team/TeamContent';
 import FeedbackSlider from '../components/Common/FeedbackSlider';
 import Footer from '../components/Layout/Footer';
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 class Team extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <Navbar />
                 <PageHeader />
                 <TeamContent />
@@ -18,9 +19,15 @@ class Team extends Component {
                 </div>
 
                 <Footer />
-            </React.Fragment>
+            </>
         );
     }
 }
+
+export const getStaticProps = async ({locale}) => ({
+  props: {
+    ...await serverSideTranslations(locale, ['common']),
+  },
+})
 
 export default Team;

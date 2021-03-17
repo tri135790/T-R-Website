@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 class Error extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <div className="error-area">
                     <div className="d-table">
                         <div className="d-table-cell">
@@ -25,9 +26,15 @@ class Error extends Component {
                         </div>
                     </div>
                 </div>
-            </React.Fragment>
+            </>
         );
     }
 }
+
+export const getStaticProps = async ({locale}) => ({
+    props: {
+        ...await serverSideTranslations(locale, ['common']),
+    },
+})
 
 export default Error;

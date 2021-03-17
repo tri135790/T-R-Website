@@ -4,7 +4,7 @@ import Link from 'next/link';
 class PriceTable extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <section className="pricing-area ptb-100">
                     <div className="container">
                         <div className="section-title">
@@ -97,7 +97,7 @@ class PriceTable extends Component {
                         </div>
                     </div>
                 </section>
-            </React.Fragment>
+            </>
         );
     }
 }

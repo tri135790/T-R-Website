@@ -4,7 +4,7 @@ import Link from 'next/link';
 class BlogCard extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <div className="row">
                     <div className="col-lg-6 col-md-6">
                         <div className="single-blog-post">
@@ -265,7 +265,7 @@ class BlogCard extends Component {
                     </div>
                     {/* End Pagination */}
                 </div>
-            </React.Fragment>
+            </>
         );
     }
 }

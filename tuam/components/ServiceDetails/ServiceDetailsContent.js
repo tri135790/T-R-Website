@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class ServiceDetailsContent extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <section className="services-details-area ptb-100">
                     <div className="container">
                         <div className="services-details-overview">
@@ -49,7 +49,7 @@ class ServiceDetailsContent extends Component {
                         </div>
                     </div>
                 </section>
-            </React.Fragment>
+            </>
         );
     }
 }

@@ -4,7 +4,7 @@ import Link from 'next/link';
 class JoinNow extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <section className="join-area ptb-100">
                     <div className="container">
                         <div className="join-content">
@@ -20,7 +20,7 @@ class JoinNow extends Component {
                         </div>
                     </div>
                 </section>
-            </React.Fragment>
+            </>
         );
     }
 }
