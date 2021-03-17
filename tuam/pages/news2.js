@@ -4,11 +4,12 @@ import PageHeader from '../components/News2/PageHeader';
 import NewsCardContent from '../components/News2/NewsCardContent';
 import NewsSideBar from '../components/News2/NewsSideBar';
 import Footer from '../components/Layout/Footer';
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 class News2 extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <Navbar />
                 <PageHeader />
 
@@ -29,9 +30,15 @@ class News2 extends Component {
                 {/* End Blog Area */}
 
                 <Footer />
-            </React.Fragment>
+            </>
         );
     }
 }
+
+export const getStaticProps = async ({locale}) => ({
+  props: {
+    ...await serverSideTranslations(locale, ['common']),
+  },
+})
 
 export default News2;

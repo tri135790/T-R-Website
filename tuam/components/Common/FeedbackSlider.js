@@ -33,7 +33,7 @@ class FeedbackSlider extends Component {
 
     render() {
         return (
-            <React.Fragment>
+            <>
                 <div className="feedback-area ptb-100">
                     <div className="container">
                     {this.state.display ? <OwlCarousel 
@@ -66,7 +66,7 @@ class FeedbackSlider extends Component {
                         </OwlCarousel> : ''}
                     </div>
                 </div>
-            </React.Fragment>
+            </>
         );
     }
 }

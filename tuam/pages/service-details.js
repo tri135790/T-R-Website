@@ -4,11 +4,12 @@ import PageHeader from '../components/ServiceDetails/PageHeader';
 import ServiceDetailsContent from '../components/ServiceDetails/ServiceDetailsContent';
 import FeedbackSlider from '../components/Common/FeedbackSlider';
 import Footer from '../components/Layout/Footer';
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 class ServiceDetails extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <Navbar />
                 <PageHeader />
                 <ServiceDetailsContent />
@@ -18,9 +19,15 @@ class ServiceDetails extends Component {
                 </div>
                 
                 <Footer /> 
-            </React.Fragment>
+            </>
         );
     }
 }
+
+export const getStaticProps = async ({locale}) => ({
+  props: {
+    ...await serverSideTranslations(locale, ['common']),
+  },
+})
 
 export default ServiceDetails;

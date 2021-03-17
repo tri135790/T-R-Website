@@ -14,11 +14,12 @@ import OurTeamSlider from '../components/Common/OurTeamSlider';
 import OurPlace from '../components/Common/OurPlace';
 import OurBlog from '../components/Common/OurBlog';
 import Footer from '../components/Layout/Footer';
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
  
 class Index2 extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <Navbar />
                 <Banner />
                 <ServicesBoxes />   
@@ -34,9 +35,15 @@ class Index2 extends Component {
                 <OurPlace />
                 <OurBlog />
                 <Footer />
-            </React.Fragment>
+            </>
         );
     }
 }
+
+export const getStaticProps = async ({locale}) => ({
+  props: {
+    ...await serverSideTranslations(locale, ['common']),
+  },
+})
 
 export default Index2;

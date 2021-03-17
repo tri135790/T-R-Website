@@ -1,104 +1,105 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Link from 'next/link';
-import { withTranslation } from 'react-i18next';
-// import { withTranslation } from 'next-i18next';
+// import { withTranslation } from 'react-i18next';
+import {useTranslation} from 'next-i18next';
+import {serverSideTranslations} from 'next-i18next/serverSideTranslations';
 
-class NewsCardContent extends Component {
-    render() {
-        const { t } = this.props;
-        return (
-            <React.Fragment>
-                <section className="blog-area ptb-100">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-4 col-md-6">
-                                <div className="single-blog-post">
-                                    <div className="post-image">
-                                        <Link href="/news-details">
-                                            <a>
-                                                <img src="/images/gallery/gallery1.jpg" alt="image" />
-                                            </a>
-                                        </Link>
+const NewsCardContent = () => {
 
-                                        <div className="date">
-                                            <i ></i>{t('Products.13')}
-                                        </div>
-                                    </div>
+  const {t} = useTranslation('common');
+  return (
+    <>
+      <section className="blog-area ptb-100">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4 col-md-6">
+              <div className="single-blog-post">
+                <div className="post-image">
+                  <Link href="/news-details">
+                    <a>
+                      <img src="/images/gallery/gallery1.jpg" alt="image"/>
+                    </a>
+                  </Link>
 
-                                    <div className="post-content">
-                                        <h3>
-                                            <Link href="/news-details">
-                                                <a>{t('Products.3')}</a>
-                                            </Link>
-                                        </h3>
-                                        <p>{t('Products.6')}</p>
+                  <div className="date">
+                    <i></i>{t('Products.13')}
+                  </div>
+                </div>
 
-                                        <Link href="/news-details">
-                                            <a className="default-btn">{t('Products.14')} <span></span></a>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
+                <div className="post-content">
+                  <h3>
+                    <Link href="/news-details">
+                      <a>{t('Products.3')}</a>
+                    </Link>
+                  </h3>
+                  <p>{t('Products.6')}</p>
 
-                            <div className="col-lg-4 col-md-6">
-                                <div className="single-blog-post">
-                                    <div className="post-image">
-                                        <Link href="/news-details">
-                                            <a>
-                                                <img src="/images/gallery/gallery2.jpg" alt="image" />
-                                            </a>
-                                        </Link>
+                  <Link href="/news-details">
+                    <a className="default-btn">{t('Products.14')} <span></span></a>
+                  </Link>
+                </div>
+              </div>
+            </div>
 
-                                        <div className="date">
-                                            <i ></i> {t('Products.13')}
-                                        </div>
-                                    </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="single-blog-post">
+                <div className="post-image">
+                  <Link href="/news-details">
+                    <a>
+                      <img src="/images/gallery/gallery2.jpg" alt="image"/>
+                    </a>
+                  </Link>
 
-                                    <div className="post-content">
-                                        <h3>
-                                            <Link href="/news-details">
-                                                <a>{t('Products.4')}</a>
-                                            </Link>
-                                        </h3>
-                                        <p>{t('Products.7')}</p>
+                  <div className="date">
+                    <i></i> {t('Products.13')}
+                  </div>
+                </div>
 
-                                        <Link href="/news-details">
-                                            <a className="default-btn">{t('Products.14')} <span></span></a>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
+                <div className="post-content">
+                  <h3>
+                    <Link href="/news-details">
+                      <a>{t('Products.4')}</a>
+                    </Link>
+                  </h3>
+                  <p>{t('Products.7')}</p>
 
-                            <div className="col-lg-4 col-md-6">
-                                <div className="single-blog-post">
-                                    <div className="post-image">
-                                        <Link href="/news-details">
-                                            <a>
-                                                <img src="/images/gallery/gallery3.jpg" alt="image" />
-                                            </a>
-                                        </Link>
+                  <Link href="/news-details">
+                    <a className="default-btn">{t('Products.14')} <span></span></a>
+                  </Link>
+                </div>
+              </div>
+            </div>
 
-                                        <div className="date">
-                                            <i ></i> {t('Products.13')}
-                                        </div>
-                                    </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="single-blog-post">
+                <div className="post-image">
+                  <Link href="/news-details">
+                    <a>
+                      <img src="/images/gallery/gallery3.jpg" alt="image"/>
+                    </a>
+                  </Link>
 
-                                    <div className="post-content">
-                                        <h3>
-                                            <Link href="/news-details">
-                                                <a>{t('Products.5')}</a>
-                                            </Link>
-                                        </h3>
-                                        <p>{t('Products.8')}</p>
+                  <div className="date">
+                    <i></i> {t('Products.13')}
+                  </div>
+                </div>
 
-                                        <Link href="/news-details">
-                                            <a className="default-btn">{t('Products.14')} <span></span></a>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Pagination */}
-                            {/* <div className="col-lg-12 col-md-12">
+                <div className="post-content">
+                  <h3>
+                    <Link href="/news-details">
+                      <a>{t('Products.5')}</a>
+                    </Link>
+                  </h3>
+                  <p>{t('Products.8')}</p>
+
+                  <Link href="/news-details">
+                    <a className="default-btn">{t('Products.14')} <span></span></a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* Pagination */}
+            {/* <div className="col-lg-12 col-md-12">
                                 <div className="pagination-area">
                                     <Link href="#">
                                         <a className="prev page-numbers">
@@ -122,13 +123,13 @@ class NewsCardContent extends Component {
                                     </Link>
                                 </div>
                             </div> */}
-                            {/* End Pagination */}
-                        </div>
-                    </div>
-                </section>
-            </React.Fragment>
-        );
-    }
+            {/* End Pagination */}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+
 }
 
-export default withTranslation()(NewsCardContent);
+export default NewsCardContent;

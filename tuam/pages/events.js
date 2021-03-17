@@ -4,11 +4,12 @@ import PageHeader from '../components/Events/PageHeader';
 import EventContent from '../components/Events/EventContent';
 import Partner from '../components/Common/Partner';
 import Footer from '../components/Layout/Footer';
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 class Events extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <Navbar />
                 <PageHeader />
                 <EventContent />
@@ -16,9 +17,15 @@ class Events extends Component {
                     <Partner />
                 </div>
                 <Footer />
-            </React.Fragment>
+            </>
         );
     }
 }
+
+export const getStaticProps = async ({locale}) => ({
+  props: {
+    ...await serverSideTranslations(locale, ['common']),
+  },
+})
 
 export default Events;

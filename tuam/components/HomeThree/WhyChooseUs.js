@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class WhyChooseUs extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <section className="benefits-section ptb-100">
                     <div className="container">
                         <div className="section-title">
@@ -73,7 +73,7 @@ class WhyChooseUs extends Component {
                         </div>
                     </div>
                 </section>
-            </React.Fragment>
+            </>
         );
     }
 }

@@ -3,18 +3,25 @@ import Navbar from '../components/Layout/Navbar';
 import PageHeader from '../components/NewsDetails/PageHeader';
 import NewsDetailsContent from '../components/NewsDetails/NewsDetailsContent';
 import Footer from '../components/Layout/Footer';
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 class NewsDetails extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <Navbar />
                 <PageHeader />
                 <NewsDetailsContent />
                 <Footer />
-            </React.Fragment>
+            </>
         );
     }
 }
+
+export const getStaticProps = async ({locale}) => ({
+  props: {
+    ...await serverSideTranslations(locale, ['common']),
+  },
+})
 
 export default NewsDetails;

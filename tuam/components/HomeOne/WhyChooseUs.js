@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class WhyChooseUs extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <section className="why-choose-us-area">
                     <div className="container-fluid">
                         <div className="row">
@@ -75,7 +75,7 @@ class WhyChooseUs extends Component {
                         </div>
                     </div>
                 </section>
-            </React.Fragment>
+            </>
         );
     }
 }

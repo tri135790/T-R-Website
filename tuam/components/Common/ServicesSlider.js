@@ -48,7 +48,7 @@ class ServicesSlider extends Component {
 
     render() {
         return (
-            <React.Fragment>
+            <>
                 <section className="services-area">
                     <div className="container">
                         {this.state.display ? <OwlCarousel 
@@ -169,7 +169,7 @@ class ServicesSlider extends Component {
                         </OwlCarousel> : ''}
                     </div>
                 </section>
-            </React.Fragment>
+            </>
         );
     }
 }

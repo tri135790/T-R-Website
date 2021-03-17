@@ -4,7 +4,7 @@ import Link from 'next/link';
 class ContactContent extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <section className="contact-area ptb-100">
                     <div className="container">
                         <div className="row">
@@ -119,7 +119,7 @@ class ContactContent extends Component {
                         <img src="/images/bg-map.png" alt="image" />
                     </div>
                 </section>
-            </React.Fragment>
+            </>
         );
     }
 }

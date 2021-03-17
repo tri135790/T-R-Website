@@ -4,7 +4,7 @@ import Link from 'next/link';
 class TeamContent extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <div className="team-area ptb-100">
                     <div className="container">
                         <div className="row">
@@ -226,7 +226,7 @@ class TeamContent extends Component {
                         </div>
                     </div>
                 </div>
-            </React.Fragment>
+            </>
         );
     }
 }

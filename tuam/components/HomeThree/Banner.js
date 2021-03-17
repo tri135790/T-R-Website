@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Banner extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <div className="banner-section item-bg4">
                     <div className="d-table">
                         <div className="d-table-cell">
@@ -26,7 +26,7 @@ class Banner extends Component {
                         </div>
                     </div>
                 </div>
-            </React.Fragment>
+            </>
         );
     }
 }

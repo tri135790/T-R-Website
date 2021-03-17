@@ -49,7 +49,7 @@ class OurTeamSlider extends Component {
 
     render() {
         return (
-            <React.Fragment>
+            <>
                 <section className="team-area ptb-100">
                     <div className="container">
                         <div className="section-title">
@@ -200,7 +200,7 @@ class OurTeamSlider extends Component {
                         </OwlCarousel> : ''}
                     </div>
                 </section>
-            </React.Fragment>
+            </>
         );
     }
 }

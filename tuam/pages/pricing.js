@@ -4,11 +4,12 @@ import PageHeader from '../components/Pricing/PageHeader';
 import PriceTable from '../components/Pricing/PriceTable';
 import Partner from '../components/Common/Partner';
 import Footer from '../components/Layout/Footer';
+import {serverSideTranslations} from "next-i18next/serverSideTranslations";
 
 class Pricing extends Component {
     render() {
         return (
-            <React.Fragment>
+            <>
                 <Navbar />
                 <PageHeader />
                 <PriceTable />
@@ -18,9 +19,15 @@ class Pricing extends Component {
                 </div>
 
                 <Footer />
-            </React.Fragment>
+            </>
         );
     }
 }
+
+export const getStaticProps = async ({locale}) => ({
+  props: {
+    ...await serverSideTranslations(locale, ['common']),
+  },
+})
 
 export default Pricing;

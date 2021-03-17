@@ -34,7 +34,7 @@ class OurPlace extends Component {
 
     render() {
         return (
-            <React.Fragment>
+            <>
                 <section className="place-area">
                     <div className="container-fluid">
                         <div className="row">
@@ -93,7 +93,7 @@ class OurPlace extends Component {
                         </div>
                     </div>
                 </section>
-            </React.Fragment>
+            </>
         );
     }
 }
