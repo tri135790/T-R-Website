@@ -1,12 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
-// import { withTranslation } from 'react-i18next';
-import {useTranslation} from 'next-i18next';
-import {serverSideTranslations} from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 
 const NewsCardContent = () => {
 
-  const {t} = useTranslation('common');
+  const { t } = useTranslation('common');
   return (
     <>
       <section className="blog-area ptb-100">
@@ -15,26 +13,26 @@ const NewsCardContent = () => {
             <div className="col-lg-4 col-md-6">
               <div className="single-blog-post">
                 <div className="post-image">
-                  <Link href="/news-details">
+                  <Link href="/product-details">
                     <a>
-                      <img src="/images/gallery/gallery1.jpg" alt="image"/>
+                      <img src="/images/gallery/gallery1.png" alt="image" />
                     </a>
                   </Link>
 
                   <div className="date">
-                    <i></i>{t('Products.13')}
+                    <i >{t('Products.13')}</i>
                   </div>
                 </div>
 
                 <div className="post-content">
                   <h3>
-                    <Link href="/news-details">
+                    <Link href="/product-details">
                       <a>{t('Products.3')}</a>
                     </Link>
                   </h3>
                   <p>{t('Products.6')}</p>
 
-                  <Link href="/news-details">
+                  <Link href="/product-details">
                     <a className="default-btn">{t('Products.14')} <span></span></a>
                   </Link>
                 </div>
@@ -44,26 +42,26 @@ const NewsCardContent = () => {
             <div className="col-lg-4 col-md-6">
               <div className="single-blog-post">
                 <div className="post-image">
-                  <Link href="/news-details">
+                  <Link href="/product-details">
                     <a>
-                      <img src="/images/gallery/gallery2.jpg" alt="image"/>
+                      <img src="/images/gallery/gallery2.png" alt="image" />
                     </a>
                   </Link>
 
                   <div className="date">
-                    <i></i> {t('Products.13')}
+                    <i>{t('Products.13')}</i> 
                   </div>
                 </div>
 
                 <div className="post-content">
                   <h3>
-                    <Link href="/news-details">
+                    <Link href="/product-details">
                       <a>{t('Products.4')}</a>
                     </Link>
                   </h3>
                   <p>{t('Products.7')}</p>
 
-                  <Link href="/news-details">
+                  <Link href="/product-details">
                     <a className="default-btn">{t('Products.14')} <span></span></a>
                   </Link>
                 </div>
@@ -73,26 +71,26 @@ const NewsCardContent = () => {
             <div className="col-lg-4 col-md-6">
               <div className="single-blog-post">
                 <div className="post-image">
-                  <Link href="/news-details">
+                  <Link href="/product-details">
                     <a>
-                      <img src="/images/gallery/gallery3.jpg" alt="image"/>
+                      <img src="/images/gallery/gallery3.png" alt="image" />
                     </a>
                   </Link>
 
                   <div className="date">
-                    <i></i> {t('Products.13')}
+                    <i>{t('Products.13')}</i> 
                   </div>
                 </div>
 
                 <div className="post-content">
                   <h3>
-                    <Link href="/news-details">
+                    <Link href="/product-details">
                       <a>{t('Products.5')}</a>
                     </Link>
                   </h3>
                   <p>{t('Products.8')}</p>
 
-                  <Link href="/news-details">
+                  <Link href="/product-details">
                     <a className="default-btn">{t('Products.14')} <span></span></a>
                   </Link>
                 </div>

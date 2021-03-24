@@ -13,13 +13,14 @@
         "3": "Khẩu trang 3-4 lớp",
         "4": "Găng tay y tế",
         "5": "Áo choàng y tế",
-        "6": "Khẩu trang y tế 3, 4 lớp mà lớp ngoài thường có màu xanh hoặc vàng. Viện Y học ứng dụng Việt Nam cho biết thêm khẩu trang y tế bằng vải thông thường có 3 lớp với công dụng khác nhau:",
+        "6": "Khẩu trang y tế 3, 4 lớp mà lớp ngoài thường có màu xanh hoặc vàng. Viện Y học ứng dụng Việt Nam cho biết thêm khẩu trang y tế bằng vải thông thường có 3 lớp với công dụng khác nhau",
         "7": "Găng tay y tế cũng là một găng tay bảo hộ lao động nhưng mỏng, nhẹ, dai và chuyên được dung trong lĩnh vực y tế, thực phẩm, phòng thí nghiệm, 1 số ngành công nghiệp nhẹ như sơn…",
-        "8": "Áo choàng phẫu thuật bệnh viện dùng một lần là một loại vải y tế loại 2 dùng để giảm sự truyền vi khuẩn từ da của nhân viên phẫu thuật vào không khí trong phòng phẫu thuật, cũng như để bảo vệ nhân viên phẫu thuật khỏi tiếp xúc với chất dịch cơ thể.",
+        "8": "Áo choàng phẫu thuật bệnh viện dùng một lần là một loại vải y tế loại 2 dùng để giảm sự truyền vi khuẩn từ da của nhân viên phẫu thuật vào không khí trong phòng phẫu thuật",
         "9": "Khẩu trang N95",
         "10": "Khẩu trang AH MASK N95 được thiết kế để ôm khít vùng mũi và miệng người đeo.",
         "11": "Máy thở",
         "12": "Máy thở được sử dụng khi bản thân người bệnh không thể tự thở.",
+        "13": "Y tế",
         "14": "Xem thêm"
     },
     "Contact Us": {
@@ -58,6 +59,14 @@
         "9": "Điện thoại:",
         "10":"Xem địa chỉ trên GoogleMap",
         "11":"Nhập địa chỉ Email"
+    },
+    "ProductDetail": {
+        "1": "Chi tiết sản phẩm",
+        "2" : "Trở về trang sản phẩm",
+        "3" : "Áo choàng phẫu thuật bệnh viện dùng một lần là một loại vải y tế loại 2 dùng để giảm sự truyền vi khuẩn từ da của nhân viên phẫu thuật vào không khí trong phòng phẫu thuật, cũng như để bảo vệ nhân viên phẫu thuật khỏi tiếp xúc với chất dịch cơ thể. áo choàng thường được xây dựng từ các sợi như polypropylen và polyester, bằng cách sử dụng kỹ thuật không dệt. Thông thường, một phẫu thuật dùng một lần vô trùng được sử dụng kỹ thuật không dệt được gọi là SMS, viết tắt của spunbond, tan chảy, spunbond.",
+        "4" : "Mô tả",
+        "5" : "Đánh giá",
+        "6" : "Các sản phẩm khác của ATR"
     }
     
 }

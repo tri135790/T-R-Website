@@ -1,13 +1,16 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from '../../utils/ActiveLink';
 import 'react-dropdown/style.css';
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import Button from 'react-bootstrap/Button'
-import {useTranslation} from 'next-i18next';
-import {serverSideTranslations} from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 
 const NavbarTwo = () => {
-  const {collapsed, setCollapsed} = useState(true)
+  const [collapsed, setCollapsed] = useState(true);
+
+  const handleCollapsed = () => {
+    setCollapsed(collapsed => !collapsed)
+  }
 
   useEffect(() => {
     let elementId = document.getElementById("navbar");
@@ -22,33 +25,31 @@ const NavbarTwo = () => {
   }, [])
 
 
-  const {t, i18n} = useTranslation('common')
+  const { t, i18n } = useTranslation('common')
   const classOne = collapsed ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
   const classTwo = collapsed ? 'navbar-toggler navbar-toggler-right collapsed' : 'navbar-toggler navbar-toggler-right';
-
   return (
     <>
-
       <div id="navbar" className="navbar-area navbar-style-two">
         <div className="tuam-nav">
           <div className="container-fluid">
             <nav className="navbar navbar-expand-md navbar-light">
               <Link href="/">
                 <a className="navbar-brand">
-                  <img src="/images/white-logo.png" alt="logo" className="white-logo"/>
+                  <img src="/images/white-logo.png" alt="logo" className="white-logo" />
 
                   {/* For mobile device */}
-                  <img src="/images/logo.png" alt="logo" className="logo"/>
+                  <img src="/images/logo.png" alt="logo" className="logo" />
                 </a>
               </Link>
               <ButtonGroup id="language-button-mobile" size="sm">
-                <Button variant="warning" className="language-button" active={i18n.language === 'vn'}
-                        onClick={() => window.location = '/vn'}>VIE</Button>
-                <Button variant="warning" className="language-button" active={i18n.language === 'en'}
-                        onClick={() => window.location = '/en'}>ENG</Button>
+                <Button variant="warning" className="language-button" active={() => i18n.language === 'vn'}
+                  onClick={() => window.location = '/vn'}>VIE</Button>
+                <Button variant="warning" className="language-button" active={() => i18n.language === 'en'}
+                  onClick={() => window.location = '/en'}>ENG</Button>
               </ButtonGroup>
               <button
-                onClick={() => setCollapsed(collapsed => !collapsed)}
+                onClick={handleCollapsed}
                 className={classTwo}
                 type="button"
                 data-toggle="collapse"
@@ -88,9 +89,9 @@ const NavbarTwo = () => {
                 </ul>
                 <ButtonGroup id="language-button-desktop" size="sm">
                   <Button variant="warning" className="language-button" active={i18n.language === 'vn'}
-                          onClick={() => window.location = '/vn'}>VIE</Button>
+                    onClick={() => window.location = '/vn'}>VIE</Button>
                   <Button variant="warning" className="language-button" active={i18n.language === 'en'}
-                          onClick={() => window.location = '/en'}>ENG</Button>
+                    onClick={() => window.location = '/en'}>ENG</Button>
                 </ButtonGroup>
                 <div className="others-option">
                   <div className="call-us">
