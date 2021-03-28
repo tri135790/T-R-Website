@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import ModalVideo from 'react-modal-video';
 import {useTranslation} from 'next-i18next';
-import {serverSideTranslations} from 'next-i18next/serverSideTranslations';
+import { Player } from 'video-react';
 
 const VideoArea = () => {
   const {isOpen, setIsOpen} = useState(false)
@@ -40,6 +40,11 @@ const VideoArea = () => {
         videoId='szuchBiLrEM'
         onClose={() => setIsOpen(true)}
       />
+      {/* <Player
+      playsInline
+      poster="/images/video-img.jpg"
+      src="/images/gallery/videoatr.mp4"
+    /> */}
     </>
   );
 }

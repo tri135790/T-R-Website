@@ -37,7 +37,7 @@ class MyApp extends App {
                 <Head>
                     <meta charSet="utf-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
-                    <title>Tuam - React Next Office Space & Rental Template</title>
+                    <title>ATR Company</title>
                 </Head>
 
                 <Component {...pageProps} />

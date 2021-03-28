@@ -50,7 +50,7 @@ const WeOfferSlider = () => {
             {...options}
           >
             <div className="services-box">
-              <img src="/images/gallery/gallery1.jpg" alt="image"/>
+              <img src="/images/gallery/gallery1.png" alt="image"/>
 
               <div className="services-content">
                 <h3>
@@ -58,12 +58,11 @@ const WeOfferSlider = () => {
                     <a>{t('Products.3')}</a>
                   </Link>
                 </h3>
-                <p>Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod</p>
               </div>
             </div>
 
             <div className="services-box">
-              <img src="/images/gallery/gallery2.jpg" alt="image"/>
+              <img src="/images/gallery/gallery2.png" alt="image"/>
 
               <div className="services-content">
                 <h3>
@@ -71,12 +70,11 @@ const WeOfferSlider = () => {
                     <a>{t('Products.4')}</a>
                   </Link>
                 </h3>
-                <p>Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod</p>
               </div>
             </div>
 
             <div className="services-box">
-              <img src="/images/gallery/gallery3.jpg" alt="image"/>
+              <img src="/images/gallery/gallery3.png" alt="image"/>
 
               <div className="services-content">
                 <h3>
@@ -84,7 +82,6 @@ const WeOfferSlider = () => {
                     <a>{t('Products.5')}</a>
                   </Link>
                 </h3>
-                <p>Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod</p>
               </div>
             </div>
           </OwlCarousel>}

@@ -1643,6 +1643,9 @@
   .pagination-area {
     margin-top: 20px;
   }
+  .page-title-area {
+    height: 350px;
+  }
 }
 
 /* Min width: 1550px */
