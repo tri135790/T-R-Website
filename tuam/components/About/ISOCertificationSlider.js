@@ -41,18 +41,18 @@ class ISOCertificationSlider extends Component {
                             {...options}
                         >
                             <div className="iso-certification-item">
-                                <img src="/images/Certificate/iso1.jpg" alt="image" />
-                                <img src="/images/Certificate/iso2.jpg" alt="image" />
+                                <img src="/images/certificate/iso1.jpg" alt="image" />
+                                <img src="/images/certificate/iso2.jpg" alt="image" />
                             </div>
 
                             <div className="iso-certification-item">
-                            <img src="/images/Certificate/iso3.jpg" alt="image" />
-                                <img src="/images/Certificate/iso4.jpg" alt="image" />
+                            <img src="/images/certificate/iso3.jpg" alt="image" />
+                                <img src="/images/certificate/iso4.jpg" alt="image" />
                             </div>
 
                             <div className="iso-certification-item">
-                            <img src="/images/Certificate/iso5.jpg" alt="image" />
-                                <img src="/images/Certificate/iso6.jpg" alt="image" />
+                            <img src="/images/certificate/iso5.jpg" alt="image" />
+                                <img src="/images/certificate/iso6.jpg" alt="image" />
                             </div>
                         </OwlCarousel> : ''}
                     </div>

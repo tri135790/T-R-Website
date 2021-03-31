@@ -41,13 +41,13 @@ class FDACertificationSlider extends Component {
                             {...options}
                         >
                             <div className="iso-certification-item">
-                                <img src="/images/Certificate/fda1.jpg" alt="image" />
-                                <img src="/images/Certificate/fda2.jpg" alt="image" />
+                                <img src="/images/certificate/fda1.jpg" alt="image" />
+                                <img src="/images/certificate/fda2.jpg" alt="image" />
                             </div>
 
                             <div className="iso-certification-item">
-                            <img src="/images/Certificate/fda3.jpg" alt="image" />
-                                <img src="/images/Certificate/fda4.jpg" alt="image" />
+                            <img src="/images/certificate/fda3.jpg" alt="image" />
+                                <img src="/images/certificate/fda4.jpg" alt="image" />
                             </div>
                         </OwlCarousel> : ''}
                     </div>
