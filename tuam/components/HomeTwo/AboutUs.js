@@ -32,7 +32,7 @@ const AboutUs = () => {
                 <span className="sub-title">{t('About Us.1')}</span>
                 <h2>{t('Subtitle About Us 1.1')}</h2>
                 <p>{t('Subtitle About Us 2.1')}</p>
-                <Link href="/about">
+                <Link href="/about#certification">
                   <a className="read-more-btn">
                     {t('See our ISO & FDA Certifications.1')} <i className="flaticon-next"></i>
                   </a>

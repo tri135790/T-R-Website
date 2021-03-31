@@ -65,7 +65,7 @@ body {
 }
 
 .white-logo, .logo {
-  max-height: 35px;
+  max-height: 30px;
 }
 
 img {
@@ -2495,6 +2495,7 @@ Partner Area CSS
 
 .single-partner-item {
   text-align: center;
+  width: 100%;
 }
 
 .single-partner-item a {
@@ -4582,7 +4583,7 @@ blockquote::after, .blockquote::after {
 Page Title Area CSS
 =================================================*/
 .page-title-area {
-  height: 450px;
+  height: 350px;
   position: relative;
   z-index: 1;
   background-position: center center;
@@ -5908,4 +5909,20 @@ Go Top CSS
 .partner-area.other-product-area {
   border-top: 1px solid #d99739;
 }
+
+.single-partner-item a {
+  padding: 20% 20%;
+}
+
+.iso-certification-item {
+  display: flex;
+}
+
+.owl-carousel .owl-item .iso-certification-item  img {
+  width: 50%;
+}
+/* .single-partner-item a img {
+  border-radius: 50%;
+  border: solid 0.5px
+} */
 /*# sourceMappingURL=style.css.map */

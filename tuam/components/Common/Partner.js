@@ -27,10 +27,10 @@ const options = {
       items: 4,
     },
     768: {
-      items: 5,
+      items: 4,
     },
     1200: {
-      items: 7,
+      items: 5,
     }
   }
 }
@@ -93,14 +93,6 @@ const Partner = () => {
               <Link href="#">
                 <a>
                   <img src="/images/partner/partner6.png" alt="image"/>
-                </a>
-              </Link>
-            </div>
-
-            <div className="single-partner-item">
-              <Link href="#">
-                <a>
-                  <img src="/images/partner/partner7.png" alt="image"/>
                 </a>
               </Link>
             </div>

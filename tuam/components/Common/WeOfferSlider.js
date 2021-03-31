@@ -54,7 +54,7 @@ const WeOfferSlider = () => {
 
               <div className="services-content">
                 <h3>
-                  <Link href="#">
+                  <Link href="/product-details">
                     <a>{t('Products.3')}</a>
                   </Link>
                 </h3>
@@ -66,7 +66,7 @@ const WeOfferSlider = () => {
 
               <div className="services-content">
                 <h3>
-                  <Link href="#">
+                  <Link href="/product-details">
                     <a>{t('Products.4')}</a>
                   </Link>
                 </h3>
@@ -78,7 +78,7 @@ const WeOfferSlider = () => {
 
               <div className="services-content">
                 <h3>
-                  <Link href="#">
+                  <Link href="/product-details">
                     <a>{t('Products.5')}</a>
                   </Link>
                 </h3>

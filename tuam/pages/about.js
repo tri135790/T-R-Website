@@ -11,6 +11,7 @@ import FeedbackSlider from '../components/Common/FeedbackSlider';
 import Partner from '../components/Common/Partner';
 import Footer from '../components/Layout/Footer';
 import {serverSideTranslations} from "next-i18next/serverSideTranslations";
+import CertificationTab from '../components/About/CertificationTab';
 
 class About extends Component {
     render() {
@@ -19,8 +20,9 @@ class About extends Component {
                 <NavbarTwo useSuspense={false} />
                 <PageHeader useSuspense={false} />
                 <AboutText useSuspense={false} />
-                <ServicesSlider useSuspense={false} />
-                <OurMission useSuspense={false} />
+                {/* <ServicesSlider useSuspense={false} /> */}
+                {/* <OurMission useSuspense={false} /> */}
+                <CertificationTab useSuspense={false}/>
                 <OurTeamSlider useSuspense={false} />
                 <JoinNow useSuspense={false} />
                 <FeedbackSlider useSuspense={false} />
