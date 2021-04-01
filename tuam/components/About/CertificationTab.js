@@ -26,7 +26,7 @@ const CertificationTab = () => {
         <>
             <div className="container">
                 <div className="section-title" id="certification" >
-                    <h2 >The Floor Plans</h2>
+                    <h2 >{t('Certification.1')}</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
                 <div className="row">
@@ -37,11 +37,11 @@ const CertificationTab = () => {
                                     className="current"
                                     onClick={(e) => openTabSection(e, 'tab1')}
                                 >
-                                    {t('ProductDetail.4')}
+                                    {t('Certification.2')}
                                 </li>
 
                                 <li onClick={(e) => openTabSection(e, 'tab2')}>
-                                    {t('ProductDetail.5')}
+                                    {t('Certification.3')}
                                 </li>
                             </ul>
 

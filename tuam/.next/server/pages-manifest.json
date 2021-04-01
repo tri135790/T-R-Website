@@ -3,5 +3,7 @@
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
   "/about": "pages/about.js",
-  "/contact": "pages/contact.js"
+  "/": "pages/index.js",
+  "/product-details": "pages/product-details.js",
+  "/products": "pages/products.js"
 }

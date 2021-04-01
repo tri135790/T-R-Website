@@ -4,7 +4,7 @@ import {useTranslation} from 'next-i18next';
 import { Player } from 'video-react';
 
 const VideoArea = () => {
-  const {isOpen, setIsOpen} = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
   const {t} = useTranslation('common')
   return (
     <>
@@ -35,16 +35,11 @@ const VideoArea = () => {
       </section>
 
       <ModalVideo
-        channel='youtube'
+        channel='custom'
+        url='/images/gallery/videoatr.mp4'
         isOpen={isOpen}
-        videoId='szuchBiLrEM'
-        onClose={() => setIsOpen(true)}
+        onClose={() => setIsOpen(false)}
       />
-      {/* <Player
-      playsInline
-      poster="/images/video-img.jpg"
-      src="/images/gallery/videoatr.mp4"
-    /> */}
     </>
   );
 }

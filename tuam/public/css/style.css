@@ -5917,10 +5917,6 @@ Go Top CSS
 .iso-certification-item {
   display: flex;
 }
-
-.owl-carousel .owl-item .iso-certification-item  img {
-  width: 50%;
-}
 /* .single-partner-item a img {
   border-radius: 50%;
   border: solid 0.5px

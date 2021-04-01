@@ -67,6 +67,11 @@
         "4" : "Mô tả",
         "5" : "Đánh giá",
         "6" : "Các sản phẩm khác của ATR"
+    },
+    "Certification": {
+        "1":"Chứng chỉ chất lượng",
+        "2":"Chứng chỉ ISO",
+        "3":"Chứng chỉ FDA"
     }
     
 }

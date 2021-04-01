@@ -68,7 +68,11 @@
         "4" : "Description",
         "5" : "Reviews",
         "6" : "Other Products of ATR"
-
-    }
+     },
+     "Certification": {
+         "1":"Certification",
+         "2":"ISO Certification",
+         "3":"FDA Certification"
+     }
 
 }

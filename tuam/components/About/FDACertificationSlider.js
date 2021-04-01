@@ -12,7 +12,21 @@ const options = {
     navText: [
         "<i class='flaticon-left-chevron'></i>",
         "<i class='flaticon-right-chevron'></i>"
-    ]
+    ],
+    responsive: {
+        0: {
+            items: 1,
+        },
+        576: {
+            items: 1,
+        },
+        768: {
+            items: 2,
+        },
+        1200: {
+            items: 2,
+        }
+    }
 }
 
 class FDACertificationSlider extends Component {
@@ -42,11 +56,14 @@ class FDACertificationSlider extends Component {
                         >
                             <div className="iso-certification-item">
                                 <img src="/images/certificate/fda1.jpg" alt="image" />
+                            </div>
+                            <div className="iso-certification-item">
                                 <img src="/images/certificate/fda2.jpg" alt="image" />
                             </div>
-
                             <div className="iso-certification-item">
-                            <img src="/images/certificate/fda3.jpg" alt="image" />
+                                <img src="/images/certificate/fda3.jpg" alt="image" />
+                            </div>
+                            <div className="iso-certification-item">
                                 <img src="/images/certificate/fda4.jpg" alt="image" />
                             </div>
                         </OwlCarousel> : ''}
