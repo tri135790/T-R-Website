@@ -44,7 +44,7 @@ const Banner = () => {
                     </h1>
 
                     <div className="btn-box">
-                      <Link href="#">
+                      <Link href="/about">
                         <a className="default-btn">
                           {t('About Us.1')} <span></span>
                         </a>
@@ -66,7 +66,7 @@ const Banner = () => {
                     <h1>{t('Title.1')}</h1>
 
                     <div className="btn-box">
-                      <Link href="#">
+                      <Link href="/about">
                         <a className="default-btn">
                           {t('About Us.1')} <span></span>
                         </a>

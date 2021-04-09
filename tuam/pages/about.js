@@ -24,8 +24,8 @@ class About extends Component {
                 {/* <OurMission useSuspense={false} /> */}
                 <CertificationTab useSuspense={false}/>
                 <OurTeamSlider useSuspense={false} />
-                <JoinNow useSuspense={false} />
-                <FeedbackSlider useSuspense={false} />
+                {/* <JoinNow useSuspense={false} /> */}
+                {/* <FeedbackSlider useSuspense={false} /> */}
                 <Partner useSuspense={false} />
                 <Footer useSuspense={false} />
             </>

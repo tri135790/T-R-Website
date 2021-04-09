@@ -12,8 +12,9 @@ const ProductDetailsContent = () => {
             "title": "Medical Mask",
             "src": [
                 "/images/gallery/7.png",
-                "/images/gallery/8.png",
                 "/images/gallery/9.png",
+                "/images/gallery/11.png",
+                "/images/gallery/13.png",
             ],
             "description": "UI/UX designing, html css tutorials",
             "content": "Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.",

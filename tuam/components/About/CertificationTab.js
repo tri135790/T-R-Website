@@ -27,7 +27,6 @@ const CertificationTab = () => {
             <div className="container">
                 <div className="section-title" id="certification" >
                     <h2 >{t('Certification.1')}</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
                 <div className="row">
                     <div className="col-lg-12 col-md-12">

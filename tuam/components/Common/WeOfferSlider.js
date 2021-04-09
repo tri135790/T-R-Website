@@ -50,7 +50,7 @@ const WeOfferSlider = () => {
             {...options}
           >
             <div className="services-box">
-              <img src="/images/gallery/gallery1.png" alt="image"/>
+              <img src="/images/gallery/gallery1.jpg" alt="image"/>
 
               <div className="services-content">
                 <h3>
@@ -80,6 +80,18 @@ const WeOfferSlider = () => {
                 <h3>
                   <Link href="/product-details">
                     <a>{t('Products.5')}</a>
+                  </Link>
+                </h3>
+              </div>
+            </div>
+
+            <div className="services-box">
+              <img src="/images/gallery/3.png" alt="image"/>
+
+              <div className="services-content">
+                <h3>
+                  <Link href="/product-details">
+                    <a>{t('Products.15')}</a>
                   </Link>
                 </h3>
               </div>

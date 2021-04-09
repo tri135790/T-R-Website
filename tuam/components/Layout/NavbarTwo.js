@@ -77,9 +77,17 @@ const NavbarTwo = () => {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link href="/products" activeClassName="active">
-                      <a className="nav-link">{t('Products.1')}</a>
+                    <Link href="/" activeClassName="active">
+                      <a className="nav-link">{t('Trading.1')}</a>
                     </Link>
+                    <ul className="dropdown-menu">
+                      <li className="nav-item">
+                        <Link href="/products" activeClassName="active">
+                          <a className="nav-link">{t('Trading.2')}</a>
+                        </Link>
+                      </li>
+
+                    </ul>
                   </li>
                   <li className="nav-item">
                     <Link href="/contact" activeClassName="active">
@@ -99,7 +107,7 @@ const NavbarTwo = () => {
                       <i className="flaticon-call"></i>
                     </div>
                     {t('Call Us.1')}
-                    <span className="number">+1 518 285679</span>
+                    <span className="number">+(84) 2873005168</span>
                   </div>
                 </div>
               </div>

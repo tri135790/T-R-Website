@@ -21,7 +21,8 @@
         "11": "Ventilator",
         "12": "A medical ventilator is a machine that helps the lungs work.",
         "13": "Medical",
-        "14": "Read more"
+        "14": "Read more",
+        "15": "Medical Mask N95"
 
     },
     "Contact Us": {
@@ -55,8 +56,7 @@
         "4": "Contact Info",
         "5": "Location 1:",
         "6":"Location 2:",
-        "7":" 4B Nguyen Van Cu, Cau Kho Ward, District 1, Ho Chi Minh City",
-        "8":" Lot IV - 2, CN5 Street, Tan Binh Industrial Park, Tay Thanh Ward, Tan Phu District, Ho Chi Minh City",
+        "7":" 35 Mac Dinh Chi, Da Kao Ward, District 1, Ho Chi Minh City",
         "9": "Phone:",
         "10":"View Location on GoogleMap",
         "11":"Enter your email address"
@@ -73,6 +73,10 @@
          "1":"Certification",
          "2":"ISO Certification",
          "3":"FDA Certification"
+     },
+     "Trading": {
+         "1":"Trading",
+         "2": "Medical and Protective Products PPE"
      }
 
 }

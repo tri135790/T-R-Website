@@ -15,7 +15,6 @@ const Footer = () => {
               <div className="col-lg-5 col-md-12">
                 <div className="subscribe-content">
                   <h2>{t('Footer.1')}</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                 </div>
               </div>
 
@@ -46,7 +45,7 @@ const Footer = () => {
 
                 <ul className="social">
                   <li>
-                    <Link href="#">
+                    <Link href="https://www.facebook.com/T-R-Company-Limited-102245858338955">
                       <a target="_blank">
                         <i className="flaticon-facebook"></i>
                       </a>
@@ -76,73 +75,12 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-
-            {/* <div className="col-lg-4 col-md-6 col-sm-6">
-                                <div className="single-footer-widget">
-                                    <h3>Quick Links</h3>
-
-                                    <ul className="footer-quick-links">
-                                        <li>
-                                            <Link href="/">
-                                                <a>Home</a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/team">
-                                                <a>Our Team</a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/about">
-                                                <a>About Us</a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/news1">
-                                                <a>Latest News</a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/the-place">
-                                                <a>The Place</a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="#">
-                                                <a>Privacy Policy</a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/events">
-                                                <a>Our Events</a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="#">
-                                                <a>Terms & Conditions</a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="#">
-                                                <a>Our Packages</a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/contact">
-                                                <a>Contact Us</a>
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div> */}
-
             <div className="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-sm-3 offset-md-3">
               <div className="single-footer-widget">
                 <h3>{t('Footer.4')}</h3>
 
                 <ul className="footer-contact-info">
                   <li><span>{t('Footer.5')}</span>{t('Footer.7')}</li>
-                  <li><span>{t('Footer.6')}</span>{t('Footer.8')}</li>
                   <li><span>Email:</span> <a href="#">t-rgroup@t-r.com.vn</a></li>
                   <li><span>{t('Footer.9')}</span> <a href="#">+(84) 933 278 434</a></li>
                   <li><a href="https://goo.gl/maps/1xz4L8TGSdkBhVmb7" target="_blank">{t('Footer.10')}</a></li>

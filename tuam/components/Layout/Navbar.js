@@ -212,7 +212,7 @@ class Navbar extends Component {
                                                 <i className="flaticon-call"></i>
                                             </div>
                                             Call Us:
-                                            <span className="number">+1 518 285679</span>
+                                            <span className="number">+(84) 2873005168</span>
                                         </div>
                                     </div>
                                 </div>

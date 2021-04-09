@@ -21,7 +21,8 @@
         "11": "Máy thở",
         "12": "Máy thở được sử dụng khi bản thân người bệnh không thể tự thở.",
         "13": "Y tế",
-        "14": "Xem thêm"
+        "14": "Xem thêm",
+        "15": "Khẩu trang N95"
     },
     "Contact Us": {
         "1": "Liên Hệ"
@@ -54,8 +55,7 @@
         "4": "Địa chỉ liên lạc",
         "5": "Địa chỉ 1:",
         "6":"Địa chỉ 2:",
-        "7":" 4b Đường Nguyễn Văn Cừ, Cầu Kho, Quận 1, Thành phố Hồ Chí Minh",
-        "8":" Lô IV - 2, KCN Tân Bình, Phường Tây Thạnh, Quận Tân Phú, Thành phố Hồ Chí Minh",
+        "7":" 35 Đường Mạc Đĩnh Chi, phường Đa Kao, Quận 1, Thành phố Hồ Chí Minh",
         "9": "Điện thoại:",
         "10":"Xem địa chỉ trên GoogleMap",
         "11":"Nhập địa chỉ Email"
@@ -72,6 +72,10 @@
         "1":"Chứng chỉ chất lượng",
         "2":"Chứng chỉ ISO",
         "3":"Chứng chỉ FDA"
+    },
+    "Trading": {
+        "1":"Thương mại",
+        "2":"Sản phẩm y tế bảo hộ PPE"
     }
     
 }
