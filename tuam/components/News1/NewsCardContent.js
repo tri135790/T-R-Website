@@ -15,7 +15,7 @@ const NewsCardContent = () => {
                 <div className="post-image">
                   <Link href="/product-details">
                     <a>
-                      <img src="/images/gallery/gallery1.png" alt="image" />
+                      <img src="/images/gallery/gallery1.jpg" alt="image" />
                     </a>
                   </Link>
 
@@ -89,6 +89,35 @@ const NewsCardContent = () => {
                     </Link>
                   </h3>
                   <p>{t('Products.8')}</p>
+
+                  <Link href="/product-details">
+                    <a className="default-btn">{t('Products.14')} <span></span></a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-md-6">
+              <div className="single-blog-post">
+                <div className="post-image">
+                  <Link href="/product-details">
+                    <a>
+                      <img src="/images/gallery/3.png" alt="image" />
+                    </a>
+                  </Link>
+
+                  <div className="date">
+                    <i >{t('Products.13')}</i>
+                  </div>
+                </div>
+
+                <div className="post-content">
+                  <h3>
+                    <Link href="/product-details">
+                      <a>{t('Products.15')}</a>
+                    </Link>
+                  </h3>
+                  <p>{t('Products.16')}</p>
 
                   <Link href="/product-details">
                     <a className="default-btn">{t('Products.14')} <span></span></a>

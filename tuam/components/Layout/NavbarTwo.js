@@ -73,12 +73,12 @@ const NavbarTwo = () => {
                   </li>
                   <li className="nav-item">
                     <Link href="/about" activeClassName="active">
-                      <a className="nav-link">{t('About Us.1')}</a>
+                      <a className="nav-link">{t('About Us.1')} </a>
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link href="/" activeClassName="active">
-                      <a className="nav-link">{t('Trading.1')}</a>
+                    <Link href="/#" >
+                      <a className="nav-link">{t('Trading.1')} <i className="flaticon-down-arrow"></i></a>
                     </Link>
                     <ul className="dropdown-menu">
                       <li className="nav-item">

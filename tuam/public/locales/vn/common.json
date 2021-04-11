@@ -22,10 +22,17 @@
         "12": "Máy thở được sử dụng khi bản thân người bệnh không thể tự thở.",
         "13": "Y tế",
         "14": "Xem thêm",
-        "15": "Khẩu trang N95"
+        "15": "Khẩu trang N95",
+        "16": "Khẩu trang AH MASK N95 được thiết kế để ôm khít vùng mũi và miệng người đeo. Khẩu trang này có thể ngăn chặn được ít nhất 95% khói bụi và vi khuẩn có trong không khí    "
     },
     "Contact Us": {
-        "1": "Liên Hệ"
+        "1": "Liên Hệ",
+        "2": "Liên Hệ",
+        "3": "Địa chỉ email của bạn sẽ không bị spam!",
+        "4": "Địa chỉ",
+        "5": "Bạn có thắc mắc",
+        "6": "Gửi tin nhắn",
+        "7": "Gửi"
     },
     "Call Us": {
         "1": "Điện thoại:"

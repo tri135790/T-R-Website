@@ -1624,9 +1624,11 @@ About Area CSS
   position: relative;
   z-index: 1;
   padding-top: 25px;
+  width: 62%;
 }
 
 .about-image .img1::before {
+  width: 62%;
   content: '';
   position: absolute;
   left: -25px;
@@ -1638,9 +1640,10 @@ About Area CSS
 }
 
 .about-image .img2 {
+  width: 80%;
   position: absolute;
   left: 0;
-  top: 55px;
+  top: -10px;
   z-index: 1;
   border: 5px solid #ffffff;
   border-left: none;
@@ -1648,11 +1651,12 @@ About Area CSS
 
 .about-image .img3 {
   position: absolute;
-  left: 0;
-  bottom: 55px;
+  left: 67px;
+  bottom: -41px;
   z-index: 1;
   border: 5px solid #ffffff;
   border-left: none;
+  width: 82%;
 }
 
 .about-content {

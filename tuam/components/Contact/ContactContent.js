@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
+import { useTranslation } from 'next-i18next';
 
-class ContactContent extends Component {
-    render() {
+const ContactContent = () => {
+    const { t } = useTranslation('common');
         return (
             <>
                 <section className="contact-area ptb-100">
@@ -10,9 +11,9 @@ class ContactContent extends Component {
                         <div className="row">
                             <div className="col-lg-6 col-md-12">
                                 <div className="section-title">
-                                    <span className="sub-title">Contact Us</span>
+                                    <span className="sub-title">{t('Contact Us.1')}</span>
                                     <h2>Say Hello</h2>
-                                    <p>Your email address will not be published. We promise not to spam!</p>
+                                    <p>{t('Contact Us.3')}</p>
                                 </div>
 
                                 <div className="contact-info">
@@ -21,8 +22,8 @@ class ContactContent extends Component {
                                             <div className="icon">
                                                 <i className="flaticon-location"></i>
                                             </div>
-                                            <span>Address</span>
-                                            CA 560 Bush St & 20th Ave, Apt 5 San Francisco, 230909, Canada
+                                            <span>{t('Contact Us.3')}</span>
+                                            {t('Footer.7')}
                                         </li>
 
                                         <li>
@@ -30,23 +31,22 @@ class ContactContent extends Component {
                                                 <i className="flaticon-email"></i>
                                             </div>
                                             <span>Email</span>
-                                            tuam@email.com <br />
-                                            fax@email.com
+                                            t-rgroup@t-r.com.vn <br />
+                                            
                                         </li>
 
                                         <li>
                                             <div className="icon">
                                                 <i className="fas fa-phone-volume"></i>
                                             </div>
-                                            <span>Phone</span>
-                                            +44 587 154756 <br />
-                                            +55 5555 14574
+                                            <span>{t('Footer.9')}</span>
+                                            +(84) 2873005168 <br />
                                         </li>
                                     </ul>
 
                                     <ul className="social">
                                         <li>
-                                            <Link href="#">
+                                            <Link href="https://www.facebook.com/T-R-Company-Limited-102245858338955">
                                                 <a target="_blank"><i className="flaticon-facebook"></i></a>
                                             </Link>
                                         </li>
@@ -71,9 +71,9 @@ class ContactContent extends Component {
 
                             <div className="col-lg-6 col-md-12">
                                 <div className="section-title">
-                                    <span className="sub-title">Have a Question?</span>
-                                    <h2>Send a Message</h2>
-                                    <p>Your email address will not be published. We promise not to spam!</p>
+                                    <span className="sub-title">{t('Contact Us.5')}</span>
+                                    <h2>{t('Contact Us.6')}</h2>
+                                    <p>{t('Contact Us.3')}</p>
                                 </div>
 
                                 <div className="contact-form">
@@ -105,7 +105,7 @@ class ContactContent extends Component {
 
                                             <div className="col-lg-12 col-md-12">
                                                 <button type="submit" className="default-btn">
-                                                    Send Message <span></span>
+                                                {t('Contact Us.7')}<span></span>
                                                 </button>
                                             </div>
                                         </div>
@@ -122,6 +122,5 @@ class ContactContent extends Component {
             </>
         );
     }
-}
 
 export default ContactContent;

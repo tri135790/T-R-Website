@@ -22,11 +22,18 @@
         "12": "A medical ventilator is a machine that helps the lungs work.",
         "13": "Medical",
         "14": "Read more",
-        "15": "Medical Mask N95"
+        "15": "Medical Mask N95",
+        "16": "T-R MASK N95 mask is a respiratory protective device designed to achieve a very close nose and mouth fit. These respirators filter out at least 95% of very small particles in the air"
 
     },
     "Contact Us": {
-        "1": "Contact Us"
+        "1": "Contact Us",
+        "2": "Contact",
+        "3": "Your email address will not be published. We promise not to spam!",
+        "4": "Address",
+        "5": "Have a Question?",
+        "6": "Send a Message",
+        "7": "Send Message"
     },
     "Call Us": {
         "1": "Call Us:"
