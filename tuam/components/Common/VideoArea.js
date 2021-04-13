@@ -15,7 +15,7 @@ const VideoArea = () => {
           </div>
 
           <div className="video-box">
-            <img src="/images/video-img.jpg" alt="image"/>
+            <img src="/images/video-img.png" alt="image"/>
 
             <div className="play-video">
               <div
